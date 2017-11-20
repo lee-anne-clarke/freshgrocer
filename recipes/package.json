@@ -1,0 +1,21 @@
+{
+  "name": "recipes",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://www.lee-anne-clarke.com/work/freshgrocer/recipes",
+  "devDependencies": {
+    "react-scripts": "0.7.0"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-burger-menu": "^1.10.9",
+    "react-dom": "^15.3.2",
+    "react-parallax": "^1.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
