@@ -2,6 +2,16 @@
 	Utilities
 ---------------------------------------------------*/
 
+.u-clearfix:before, 
+.u-clearfix:after {
+	display: table;
+	content: '';
+}
+
+.u-clearfix:after {
+	clear: both;
+}
+
 .u-relative {
   position: relative;
 }

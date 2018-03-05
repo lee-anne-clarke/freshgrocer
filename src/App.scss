@@ -1,13 +1,15 @@
 @import 'scss/_variables';
-@import 'scss/_base';
 @import 'scss/_typography';
 
-@import 'scss/components/Nav.scss';
-@import 'scss/components/HeaderBoxes.scss';
-@import 'scss/components/Footer.scss';
-@import 'scss/components/FindStores.scss';
-@import 'scss/components/OnSale.scss';
-@import 'scss/components/Recipes.scss';
-@import 'scss/components/Contact.scss';
+@import 'scss/components/_Button';
+@import 'scss/components/_Form';
+@import 'scss/components/_Nav'; 
+@import 'scss/components/_Footer';
+@import 'scss/components/_Homepage';
+@import 'scss/components/_Innerpage';
+@import 'scss/components/_FindStores';
+@import 'scss/components/_OnSale';
+@import 'scss/components/_Recipes';
+@import 'scss/components/_Contact';
 
 @import 'scss/_utilities';

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Scroll from 'react-scroll'
 
 //Necessary for React Scroll package
-let scroll = Scroll.animateScroll;
+const scroll = Scroll.animateScroll;
 
 
 class Footer extends Component {
@@ -11,18 +11,17 @@ class Footer extends Component {
 	}
 
 	render () {
-
 		return (
-		  <footer className="clearfix">
+		  <footer className="footer u-clearfix">
 		  	<ul className="footer__nav">
-		  		<li>&copy; Fresh Grocer 2016</li>
+		  		<li>&copy; Fresh Grocer {new Date().getFullYear()}</li>
 		  		<li><a href="#">Careers</a></li>
 		  		<li><a href="#">Terms of Use</a></li>
 		  		<li><a href="#">Privacy Policy</a></li>
 		  	</ul>
 
 		  	<div className="footer__backtotop">
-		  		<i className="fa fa-chevron-circle-up backtotop__btn" onClick={this.scrollToTop}></i>
+		  		<i className="fa fa-chevron-circle-up btn-backtotop" onClick={this.scrollToTop}></i>
 		  	</div>
 		  </footer>
 		);

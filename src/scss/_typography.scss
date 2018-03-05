@@ -2,6 +2,9 @@
 	Typography
 ---------------------------------------------------*/
 
+@import './variables';
+
+
 h1,
 h2 {
 	font-family: 'Roboto Condensed', sans-serif;
@@ -16,7 +19,7 @@ h3 {
 }
 
 p, 
-.contact__form {
+.form {
 	font-family: 'Noto Sans', sans-serif;
   line-height: 1.8;
 }
@@ -26,17 +29,15 @@ hr {
   border-bottom: 0.2em solid $fgBlue;
 }
 
-.textlink {
-  text-transform: uppercase;
-  
-  &, &:active, &:focus {
-    @include linkEffects;
-    @include buttonStyle;
-  }
-  
-  &:hover {
-    @include linkEffectsHover;
-    color: white;
-  }
+.maintext {
+  padding: 2% 10%;
 }
 
+.maintext--recipes {
+  text-align: center;
+  
+  & > h2, 
+  .recipes__li {
+    text-align: left;
+  }
+}

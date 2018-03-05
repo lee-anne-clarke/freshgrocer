@@ -5,44 +5,38 @@
 @import '../_variables';
 
 
-.innerpage__maintext--recipes {
-  text-align: center;
-  
-  & > h2, 
-  .recipes__list__item {
-    text-align: left;
-  }
-}
-
-.recipes__list {
-  @include listWrap;
-  max-width: 1080px;
+.recipes-list {
   display: inline-block;
+  max-width: 1080px;
+  @include listWrap;
 }
 
-.recipes__list__item {
+.recipes-li {
   margin: 0 0 5em;
 }
 
-.recipes__list__item__hover {
+.recipes-li-reveal {
   @include linkEffects;
   background-size: 100% 200%;
   background-image: linear-gradient(to bottom, $fgBlue 50%, $fgGreen 50%);
-  -webkit-transition: background-position 0.3s, color 0.3s;
-  -moz-transition: background-position 0.3s, color 0.3s;
   transition: background-position 0.3s, color 0.3s;
   
-  &:hover {background-position: 0 -100%;}
+  &:hover {
+  	background-position: 0 -100%;
+  }
 }
 
-.recipes__list__item__innertext {
+.recipes-li-innertext {
   background-color: rgba(255,255,255,0.93);
   padding: 15px;
   cursor: default;
-  h3 {margin: 0}  
+  
+  h3 {
+  	margin: 0
+  } 
 }
 
-.list__item__links {
+.recipes-li-links {
   opacity: 0;
   @include transitionOpacity;
   
@@ -51,59 +45,39 @@
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
-    &:hover {border-bottom: 1px solid black;}
+    
+    &:hover {
+    	border-bottom: 1px solid black;
+    }
   }
 }
 
 
-.recipes__list__item__hover:hover {
-  .recipes__list__item__innertext {
+.recipes-li-reveal:hover {
+  .recipes-li-innertext {
     background-color: rgba(226,243,243,0.93);
   }
   
-  .list__item__links {
+  .recipes-li-links {
     opacity: 1;
   }
-}
-
-
-.loadmore--wrap {
-  display: block;
-  color: $fgBlue;
-  font-size: 50px;
-  text-align: center;
-  padding-bottom: 0.5em;
-  clear: both;
-}
-
-.loadmore--btn {
-  display: inline;
-  cursor: pointer;
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  transition: color 0.3s;
-  &:hover {color: $fgGreen}
-}
-
-.loadmore--hide {
-  display: none;
 }
 
 
 /*************** MEDIA QUERIES ***************/
 
 @media (min-width: 1024px) {
-  .recipes__list__item__inner,
-  .recipes__list__item__innertext  {
+  .recipes-li-inner,
+  .recipes-li-innertext  {
     min-height: 400px;
   }
 
-  .recipes__list {
+  .recipes-list {
     margin-right: -15px;
     margin-left: -15px;
   }
 
-  .recipes__list__item {
+  .recipes-li {
     float: left;
     width: 33%;
     padding: 0 2em;

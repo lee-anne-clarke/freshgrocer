@@ -1,0 +1,26 @@
+/*---------------------------------------------------
+	Homepage
+---------------------------------------------------*/
+
+.homepage {
+  margin-left: -1px;
+
+  .react-parallax-content {
+    min-height: 500px;
+    padding-top: 2em;
+    padding-left: 3em;
+  }
+}
+
+.homepage__callout {
+  background-color: $fgLightBlue;
+	max-width: 400px;
+  padding: 3em;
+}
+
+@media (min-width: 540px) {
+  .homepage .react-parallax-content {
+    padding-top: 7em;
+    padding-left: 5em;
+  }
+}

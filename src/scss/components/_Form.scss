@@ -1,0 +1,59 @@
+/*---------------------------------------------------
+	Forms
+---------------------------------------------------*/
+
+.form__group {
+  margin-bottom: 2em;
+  
+  select {
+  	max-width: 100%
+  }
+  
+  textarea {
+  	resize: none;
+  }
+}
+
+.form__label,
+.form__input {
+  display: block;
+}
+
+.form__input {
+  padding: 5px 10px;
+  border: 0.15em solid #ccc;
+  
+  &:focus {
+    outline: none;
+    border-color: #b8cce4; 
+  }
+}
+ 
+.form__reqstar {
+  color: red;
+}
+
+
+/*************** MEDIA QUERIES ***************/
+
+@media (min-width: 860px) {
+  .form__group {
+    display: table;
+    width: 100%;
+    max-width: 790px;
+  }
+
+  .form__label,
+  .form__input {
+    display: table-cell;
+    vertical-align: top;
+  }
+    
+  .form__label {
+    width: 30%;
+  }
+  
+  .form__input {
+    width: 70%;
+  }
+}

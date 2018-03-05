@@ -3,10 +3,10 @@
 ---------------------------------------------------*/
 
 $fgBlue: #cff1e3;
-
 $fgGreen: #6fa83c;
-
 $fgNav: #a8d67f;
+$fgLightBlue: rgba(226,243,243,0.85);
+
 
 @mixin linkEffects {
   display: inline-block;
@@ -21,25 +21,18 @@ $fgNav: #a8d67f;
 
 @mixin buttonStyle {
   background-color: $fgBlue;
-  -webkit-transition: background-color 0.3s;
-  -moz-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
-
 
 @mixin listWrap {
   width: 100%;
   margin: 3em auto 0;
   
   *, *:after, *:before {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 }
 
-
 @mixin transitionOpacity {
   transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
 }

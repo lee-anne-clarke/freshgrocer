@@ -2,9 +2,6 @@
 	Contact Us
 ---------------------------------------------------*/
 
-@import '../_variables';
-
-
 .contact__validmsg,
 .contact__invalidmsg {
   display: none;
@@ -19,67 +16,4 @@
   font-style: italic;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.requiredstar {
-  color: red;
-}
-
-.contact__btn {
-  @include linkEffects;
-  @include buttonStyle;
-  border: none;
-  box-shadow: none;
-  padding: 10px 30px;
-  
-  &:hover, &:active {
-    @include linkEffectsHover;
-    color: white;
-  }
-}
-
-.form__group {
-  margin-bottom: 2em;
-  select {max-width: 100%}
-  textarea {resize: none;}
-}
-
-.form__label,
-.form__input {
-  display: block;
-}
-
-.form__input {
-  padding: 5px 10px;
-  border: 0.15em solid #ccc;
-  
-  &:focus {
-    outline: none;
-    border-color: #b8cce4;
-    
-  }
-}
-  
-
-/*************** MEDIA QUERIES ***************/
-@media (min-width: 860px) {
-  .form__group {
-    display: table;
-    width: 100%;
-    max-width: 790px;
-  }
-
-  .form__label,
-  .form__input {
-    display: table-cell;
-    vertical-align: top;
-  }
-    
-  .form__label {
-    width: 30%;
-  }
-  
-  .form__input {
-    width: 70%;
-  }
 }

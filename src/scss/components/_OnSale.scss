@@ -5,31 +5,41 @@
 @import '../_variables';
 
 
-.onsale__list {
+.onsale-list {
   @include listWrap;
 }
 
-.onsale__list__item {
+.onsale-li {
   margin: 0 0 5em;
+
   img {
     max-width: 100%;
     margin-bottom: -0.25em;
   }
 }
 
-.onsale__list__item__inner {
+.onsale-li-inner {
   border: 0.2em solid $fgBlue;
-  p {line-height: 1.4;}
+  
+  p {
+  	line-height: 1.4;
+  }
 }
 
-.onsale__list__item__innertext {
+.onsale-li-innertext {
   padding: 10px 10px 0;
   border-top: 0.4em solid $fgBlue;
-  h3 {margin: 0}
-  p {border-top: 0.2em solid $fgBlue;}
+  
+  h3 {
+  	margin: 0
+  }
+  
+  p {
+  	border-top: 0.2em solid $fgBlue;
+  }
 }
 
-.onsale__deal {
+.onsale-deal {
   color: red;
   padding-left: 0.6em;
 }
@@ -38,12 +48,12 @@
 /*************** MEDIA QUERIES ***************/
 
 @media (min-width: 768px) {
-  .onsale__list {
+  .onsale-list {
     margin-right: -15px;
     margin-left: -15px;
   }
 
-  .onsale__list__item {
+  .onsale-li {
     float: left;
     width: 33%;
     padding: 0 2em;

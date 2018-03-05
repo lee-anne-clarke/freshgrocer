@@ -1,0 +1,26 @@
+/*---------------------------------------------------
+	Inner pages
+---------------------------------------------------*/
+
+@import '../variables';
+
+
+.innerpage .react-parallax-content {
+  min-height: 300px;
+}
+
+.innerpage__title {
+  position: absolute;
+  bottom: 28%;
+  width: 100%;
+  z-index: 9;
+  background-color: $fgLightBlue;
+  
+  h1 {
+  	padding: 0 1em;
+  }
+
+	@media (min-width: 768px) {
+		bottom: 0;
+	}
+}

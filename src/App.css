@@ -2,16 +2,10 @@
 	Variables and Mixins
 ---------------------------------------------------*/
 /*---------------------------------------------------
-  Base styles
----------------------------------------------------*/
-.innerpage__maintext {
-  padding: 2% 10%; }
-
-.main--innerpage .react-parallax-content {
-  min-height: 300px; }
-
-/*---------------------------------------------------
 	Typography
+---------------------------------------------------*/
+/*---------------------------------------------------
+	Variables and Mixins
 ---------------------------------------------------*/
 h1,
 h2 {
@@ -24,7 +18,7 @@ h3 {
   font-weight: normal; }
 
 p,
-.contact__form {
+.form {
   font-family: 'Noto Sans', sans-serif;
   line-height: 1.8; }
 
@@ -32,46 +26,141 @@ hr {
   border: none;
   border-bottom: 0.2em solid #cff1e3; }
 
-.textlink {
+.maintext {
+  padding: 2% 10%; }
+
+.maintext--recipes {
+  text-align: center; }
+  .maintext--recipes > h2,
+  .maintext--recipes .recipes__li {
+    text-align: left; }
+
+/*---------------------------------------------------
+	Buttons and Hyperlinks
+---------------------------------------------------*/
+/*---------------------------------------------------
+	Variables and Mixins
+---------------------------------------------------*/
+.btn {
   text-transform: uppercase; }
-  .textlink, .textlink:active, .textlink:focus {
+  .btn, .btn:active, .btn:focus {
     display: inline-block;
     color: black;
     text-decoration: none;
     padding: 10px;
     background-color: #cff1e3;
-    -webkit-transition: background-color 0.3s;
-    -moz-transition: background-color 0.3s;
     transition: background-color 0.3s; }
-  .textlink:hover {
+  .btn:hover {
     background-color: #6fa83c;
     color: white; }
 
+.btn--submit {
+  border: none;
+  box-shadow: none;
+  padding: 10px 30px; }
+
+/******* Navigation *******/
+.nav-list a {
+  font-family: 'Rubik', sans-serif;
+  text-decoration: none; }
+
+.nav-list--mb a {
+  font-size: 1.4em;
+  transition: color 0.3s; }
+  .nav-list--mb a, .nav-list--mb a:focus {
+    color: #6fa83c; }
+  .nav-list--mb a:hover, .nav-list--mb a.active {
+    color: #ace9d0; }
+
+/* Burger menu */
+/*
+.bm-menu a {
+  color: #b8b7ad;
+  &:hover, &:focus {color: #c94e50;}
+}
+*/
+.nav-list--dt a {
+  color: white;
+  font-size: 1.2em; }
+  .nav-list--dt a:hover, .nav-list--dt a.active {
+    border-bottom: 0.15em solid white; }
+
+.footer__nav a {
+  text-decoration: none; }
+  .footer__nav a, .footer__nav a:focus {
+    color: #6fa83c; }
+  .footer__nav a:hover {
+    border-bottom: 0.05em solid #6fa83c; }
+
+/******* Footer *******/
+.btn-backtotop {
+  color: #6fa83c;
+  font-size: 4em;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity .25s ease-in-out; }
+  .btn-backtotop:hover {
+    opacity: 1; }
+
 /*---------------------------------------------------
-	Navigation
+	Forms
+---------------------------------------------------*/
+.form__group {
+  margin-bottom: 2em; }
+  .form__group select {
+    max-width: 100%; }
+  .form__group textarea {
+    resize: none; }
+
+.form__label,
+.form__input {
+  display: block; }
+
+.form__input {
+  padding: 5px 10px;
+  border: 0.15em solid #ccc; }
+  .form__input:focus {
+    outline: none;
+    border-color: #b8cce4; }
+
+.form__reqstar {
+  color: red; }
+
+/*************** MEDIA QUERIES ***************/
+@media (min-width: 860px) {
+  .form__group {
+    display: table;
+    width: 100%;
+    max-width: 790px; }
+  .form__label,
+  .form__input {
+    display: table-cell;
+    vertical-align: top; }
+  .form__label {
+    width: 30%; }
+  .form__input {
+    width: 70%; } }
+
+/*---------------------------------------------------
+	Navigation and Headers
 ---------------------------------------------------*/
 /*---------------------------------------------------
 	Variables and Mixins
 ---------------------------------------------------*/
-.nav--mobile__list,
-.nav--dt__list {
+.nav-list {
   list-style: none; }
-  .nav--mobile__list li,
-  .nav--dt__list li {
+  .nav-list li {
     text-transform: uppercase; }
-  .nav--mobile__list a,
-  .nav--dt__list a {
-    font-family: 'Rubik', sans-serif; }
 
-.logo--mobile,
-.nav--dt {
+.header-mobile,
+.nav-dt {
   border-bottom: 0.5em solid #6fa83c; }
 
 /******************* MOBILE *******************/
-.logo--mobile {
+.header-mobile {
   background-color: #a8d67f;
   padding: 1.3em 1em 1em 6em; }
-  .logo--mobile img {
+  .header-mobile img {
     width: 208px;
     max-width: 100%; }
 
@@ -124,106 +213,54 @@ hr {
 /* Open menu */
 .bm-menu {
   background-color: white; }
-  .bm-menu a {
-    color: #b8b7ad; }
-    .bm-menu a:hover, .bm-menu a:focus {
-      color: #c94e50; }
 
-.nav--mobile__list {
+.nav-list--mb {
   padding: 0;
   margin: 0; }
-  .nav--mobile__list li {
+  .nav-list--mb li {
     margin-bottom: 1em;
     border-bottom: 1px solid #e8e8e8; }
-  .nav--mobile__list a {
-    font-size: 1.4em;
-    text-decoration: none;
-    -webkit-transition: color 0.3s;
-    -moz-transition: color 0.3s;
-    transition: color 0.3s; }
-    .nav--mobile__list a, .nav--mobile__list a:focus {
-      color: #6fa83c; }
-    .nav--mobile__list a:hover {
-      color: #ace9d0; }
 
-.logo--mobile + div {
+.header-mobile + div {
   height: 0; }
 
 /******************* DESKTOP *******************/
-.nav--dt {
-  background-color: #a8d67f;
-  padding: 0.8em 1.5em 0.5em; }
-
-.logo--dt img {
+.header-dt img {
   width: 250px;
   max-width: 100%; }
 
-.nav--dt__list {
+.nav-dt {
+  background-color: #a8d67f;
+  padding: 0.8em 1.5em 0.5em; }
+
+.nav-list--dt {
   padding: 1em 0 0.5em;
   margin: 0; }
-  .nav--dt__list li {
+  .nav-list--dt li {
     display: inline-block;
     margin-right: 2em; }
-  .nav--dt__list a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em; }
-    .nav--dt__list a:hover {
-      border-bottom: 0.15em solid white; }
 
 /*************** MEDIA QUERIES ***************/
 @media (max-width: 767px) {
-  .nav--dt {
+  .nav-dt {
     display: none; } }
 
 @media (min-width: 768px) {
-  .logo--mobile {
-    display: none; } }
+  .header-mobile,
+  .bm-overlay,
+  .bm-menu-wrap {
+    display: none; }
+  #page-wrap {
+    transition: none !important;
+    transform: none !important; } }
 
 @media (min-width: 992px) {
-  .logo--dt,
-  .nav--dt__list {
+  .header-dt,
+  .nav-list--dt {
     display: inline-block;
     vertical-align: middle; }
-  .nav--dt__list {
+  .nav-list--dt {
     padding: 0.2em 0 0.5em 2em; } }
-
-/*---------------------------------------------------
-	Header boxes
----------------------------------------------------*/
-.headertext {
-  background-color: rgba(226, 243, 243, 0.85); }
-
-.headertext--homepage {
-  max-width: 400px;
-  padding: 3em; }
-
-.main--home {
-  margin-left: -1px; }
-  .main--home .react-parallax-content {
-    min-height: 500px;
-    padding-top: 2em;
-    padding-left: 3em; }
-
-.innerpage__header {
-  position: relative; }
-
-.headertext--innerpage {
-  position: absolute;
-  bottom: 28%;
-  width: 100%;
-  z-index: 9; }
-  .headertext--innerpage h1 {
-    padding: 0 1em; }
-
-@media (min-width: 540px) {
-  .main--home .react-parallax-content {
-    padding-top: 7em;
-    padding-left: 5em; } }
-
-@media (min-width: 768px) {
-  .headertext--innerpage {
-    bottom: 0; } }
 
 /*---------------------------------------------------
 	Footer
@@ -231,7 +268,7 @@ hr {
 /*---------------------------------------------------
 	Variables and Mixins
 ---------------------------------------------------*/
-footer {
+.footer {
   padding: 1em;
   border-top: 0.5em solid #6fa83c; }
 
@@ -241,28 +278,12 @@ footer {
   padding: 0;
   list-style: none; }
   .footer__nav li {
+    color: #b2b4b7;
     margin-bottom: 0.5em; }
-  .footer__nav a {
-    text-decoration: none; }
-    .footer__nav a, .footer__nav a:focus {
-      color: #6fa83c; }
-    .footer__nav a:hover {
-      border-bottom: 0.05em solid #6fa83c; }
 
 .footer__backtotop {
   float: right;
   line-height: 1; }
-
-.backtotop__btn {
-  color: #6fa83c;
-  font-size: 4em;
-  cursor: pointer;
-  opacity: 0.6;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out; }
-  .backtotop__btn:hover {
-    opacity: 1; }
 
 @media (min-width: 600px) {
   .footer__nav li {
@@ -279,22 +300,62 @@ footer {
     text-align: right; } }
 
 /*---------------------------------------------------
+	Homepage
+---------------------------------------------------*/
+.homepage {
+  margin-left: -1px; }
+  .homepage .react-parallax-content {
+    min-height: 500px;
+    padding-top: 2em;
+    padding-left: 3em; }
+
+.homepage__callout {
+  background-color: rgba(226, 243, 243, 0.85);
+  max-width: 400px;
+  padding: 3em; }
+
+@media (min-width: 540px) {
+  .homepage .react-parallax-content {
+    padding-top: 7em;
+    padding-left: 5em; } }
+
+/*---------------------------------------------------
+	Inner pages
+---------------------------------------------------*/
+/*---------------------------------------------------
+	Variables and Mixins
+---------------------------------------------------*/
+.innerpage .react-parallax-content {
+  min-height: 300px; }
+
+.innerpage__title {
+  position: absolute;
+  bottom: 28%;
+  width: 100%;
+  z-index: 9;
+  background-color: rgba(226, 243, 243, 0.85); }
+  .innerpage__title h1 {
+    padding: 0 1em; }
+  @media (min-width: 768px) {
+    .innerpage__title {
+      bottom: 0; } }
+
+/*---------------------------------------------------
   Find Stores
 ---------------------------------------------------*/
-.findstores__list {
+.findstores-list {
   width: 100%;
   padding-left: 1em;
   margin: 3em auto 0; }
-  .findstores__list *, .findstores__list *:after, .findstores__list *:before {
-    -webkit-box-sizing: border-box;
+  .findstores-list *, .findstores-list *:after, .findstores-list *:before {
     box-sizing: border-box; }
 
-.findstores__list__item {
+.findstores-li {
   list-style-type: none;
   padding-left: 0.4em;
   margin-bottom: 5em;
   border-left: 1px solid #53aa0e; }
-  .findstores__list__item:before {
+  .findstores-li:before {
     font-family: FontAwesome;
     content: "\f041";
     position: absolute;
@@ -305,9 +366,9 @@ footer {
 
 /*************** MEDIA QUERIES ***************/
 @media (min-width: 768px) {
-  .findstores__list {
+  .findstores-list {
     max-width: 770px; }
-  .findstores__list__item {
+  .findstores-li {
     float: left;
     width: 50%; } }
 
@@ -317,42 +378,41 @@ footer {
 /*---------------------------------------------------
 	Variables and Mixins
 ---------------------------------------------------*/
-.onsale__list {
+.onsale-list {
   width: 100%;
   margin: 3em auto 0; }
-  .onsale__list *, .onsale__list *:after, .onsale__list *:before {
-    -webkit-box-sizing: border-box;
+  .onsale-list *, .onsale-list *:after, .onsale-list *:before {
     box-sizing: border-box; }
 
-.onsale__list__item {
+.onsale-li {
   margin: 0 0 5em; }
-  .onsale__list__item img {
+  .onsale-li img {
     max-width: 100%;
     margin-bottom: -0.25em; }
 
-.onsale__list__item__inner {
+.onsale-li-inner {
   border: 0.2em solid #cff1e3; }
-  .onsale__list__item__inner p {
+  .onsale-li-inner p {
     line-height: 1.4; }
 
-.onsale__list__item__innertext {
+.onsale-li-innertext {
   padding: 10px 10px 0;
   border-top: 0.4em solid #cff1e3; }
-  .onsale__list__item__innertext h3 {
+  .onsale-li-innertext h3 {
     margin: 0; }
-  .onsale__list__item__innertext p {
+  .onsale-li-innertext p {
     border-top: 0.2em solid #cff1e3; }
 
-.onsale__deal {
+.onsale-deal {
   color: red;
   padding-left: 0.6em; }
 
 /*************** MEDIA QUERIES ***************/
 @media (min-width: 768px) {
-  .onsale__list {
+  .onsale-list {
     margin-right: -15px;
     margin-left: -15px; }
-  .onsale__list__item {
+  .onsale-li {
     float: left;
     width: 33%;
     padding: 0 2em; } }
@@ -363,101 +423,67 @@ footer {
 /*---------------------------------------------------
 	Variables and Mixins
 ---------------------------------------------------*/
-.innerpage__maintext--recipes {
-  text-align: center; }
-  .innerpage__maintext--recipes > h2,
-  .innerpage__maintext--recipes .recipes__list__item {
-    text-align: left; }
-
-.recipes__list {
-  width: 100%;
-  margin: 3em auto 0;
+.recipes-list {
+  display: inline-block;
   max-width: 1080px;
-  display: inline-block; }
-  .recipes__list *, .recipes__list *:after, .recipes__list *:before {
-    -webkit-box-sizing: border-box;
+  width: 100%;
+  margin: 3em auto 0; }
+  .recipes-list *, .recipes-list *:after, .recipes-list *:before {
     box-sizing: border-box; }
 
-.recipes__list__item {
+.recipes-li {
   margin: 0 0 5em; }
 
-.recipes__list__item__hover {
+.recipes-li-reveal {
   display: inline-block;
   color: black;
   text-decoration: none;
   padding: 10px;
   background-size: 100% 200%;
   background-image: linear-gradient(to bottom, #cff1e3 50%, #6fa83c 50%);
-  -webkit-transition: background-position 0.3s, color 0.3s;
-  -moz-transition: background-position 0.3s, color 0.3s;
   transition: background-position 0.3s, color 0.3s; }
-  .recipes__list__item__hover:hover {
+  .recipes-li-reveal:hover {
     background-position: 0 -100%; }
 
-.recipes__list__item__innertext {
+.recipes-li-innertext {
   background-color: rgba(255, 255, 255, 0.93);
   padding: 15px;
   cursor: default; }
-  .recipes__list__item__innertext h3 {
+  .recipes-li-innertext h3 {
     margin: 0; }
 
-.list__item__links {
+.recipes-li-links {
   opacity: 0;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out; }
-  .list__item__links a {
+  transition: opacity .25s ease-in-out; }
+  .recipes-li-links a {
     color: black;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer; }
-    .list__item__links a:hover {
+    .recipes-li-links a:hover {
       border-bottom: 1px solid black; }
 
-.recipes__list__item__hover:hover .recipes__list__item__innertext {
+.recipes-li-reveal:hover .recipes-li-innertext {
   background-color: rgba(226, 243, 243, 0.93); }
 
-.recipes__list__item__hover:hover .list__item__links {
+.recipes-li-reveal:hover .recipes-li-links {
   opacity: 1; }
-
-.loadmore--wrap {
-  display: block;
-  color: #cff1e3;
-  font-size: 50px;
-  text-align: center;
-  padding-bottom: 0.5em;
-  clear: both; }
-
-.loadmore--btn {
-  display: inline;
-  cursor: pointer;
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  transition: color 0.3s; }
-  .loadmore--btn:hover {
-    color: #6fa83c; }
-
-.loadmore--hide {
-  display: none; }
 
 /*************** MEDIA QUERIES ***************/
 @media (min-width: 1024px) {
-  .recipes__list__item__inner,
-  .recipes__list__item__innertext {
+  .recipes-li-inner,
+  .recipes-li-innertext {
     min-height: 400px; }
-  .recipes__list {
+  .recipes-list {
     margin-right: -15px;
     margin-left: -15px; }
-  .recipes__list__item {
+  .recipes-li {
     float: left;
     width: 33%;
     padding: 0 2em; } }
 
 /*---------------------------------------------------
 	Contact Us
----------------------------------------------------*/
-/*---------------------------------------------------
-	Variables and Mixins
 ---------------------------------------------------*/
 .contact__validmsg,
 .contact__invalidmsg {
@@ -472,60 +498,16 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px; }
 
-.requiredstar {
-  color: red; }
-
-.contact__btn {
-  display: inline-block;
-  color: black;
-  text-decoration: none;
-  padding: 10px;
-  background-color: #cff1e3;
-  -webkit-transition: background-color 0.3s;
-  -moz-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-  border: none;
-  box-shadow: none;
-  padding: 10px 30px; }
-  .contact__btn:hover, .contact__btn:active {
-    background-color: #6fa83c;
-    color: white; }
-
-.form__group {
-  margin-bottom: 2em; }
-  .form__group select {
-    max-width: 100%; }
-  .form__group textarea {
-    resize: none; }
-
-.form__label,
-.form__input {
-  display: block; }
-
-.form__input {
-  padding: 5px 10px;
-  border: 0.15em solid #ccc; }
-  .form__input:focus {
-    outline: none;
-    border-color: #b8cce4; }
-
-/*************** MEDIA QUERIES ***************/
-@media (min-width: 860px) {
-  .form__group {
-    display: table;
-    width: 100%;
-    max-width: 790px; }
-  .form__label,
-  .form__input {
-    display: table-cell;
-    vertical-align: top; }
-  .form__label {
-    width: 30%; }
-  .form__input {
-    width: 70%; } }
-
 /*---------------------------------------------------
 	Utilities
 ---------------------------------------------------*/
+.u-clearfix:before,
+.u-clearfix:after {
+  display: table;
+  content: ''; }
+
+.u-clearfix:after {
+  clear: both; }
+
 .u-relative {
   position: relative; }
