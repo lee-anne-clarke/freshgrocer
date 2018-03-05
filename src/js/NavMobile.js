@@ -14,23 +14,23 @@ class NavMobile extends Component {
 				
 		    <ul className="nav-list nav-list--mb">
 		      <li className="menu-item">
-		      	<NavLink to="/work/freshgrocer/about" activeClassName="active">About Us</NavLink>
+		      	<NavLink to="/about" activeClassName="active">About Us</NavLink>
 		      </li>
 		      
 		      <li className="menu-item">
-		      	<NavLink to="/work/freshgrocer/findstores" activeClassName="active">Find A Store</NavLink>
+		      	<NavLink to="/findstores" activeClassName="active">Find A Store</NavLink>
 		      </li>
 		      
 		      <li className="menu-item">
-		      	<NavLink to="/work/freshgrocer/onsale" activeClassName="active">On Sale</NavLink>
+		      	<NavLink to="/onsale" activeClassName="active">On Sale</NavLink>
 		      </li>
 		      
 		      <li className="menu-item">
-		      	<NavLink to="/work/freshgrocer/recipes" activeClassName="active">Recipes</NavLink>
+		      	<NavLink to="/recipes" activeClassName="active">Recipes</NavLink>
 		      </li>
 		      
 		      <li className="menu-item">
-		      	<NavLink to="/work/freshgrocer/contact" activeClassName="active">Contact Us</NavLink>
+		      	<NavLink to="/contact" activeClassName="active">Contact Us</NavLink>
 		      </li>
 		    </ul>
 	    </Menu>

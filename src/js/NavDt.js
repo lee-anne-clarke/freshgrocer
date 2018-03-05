@@ -10,15 +10,15 @@ class NavDt extends Component {
 		return (
 	    <nav className="nav-dt">
 	      <header className="header-dt">
-	        <Link to="/work/freshgrocer/"><img src={fglogo} alt="Fresh Grocer logo" /></Link>
+	        <Link to="/"><img src={fglogo} alt="Fresh Grocer logo" /></Link>
 	      </header>
 
 	      <ul className="nav-list nav-list--dt">
-		      <li><NavLink to="/work/freshgrocer/about" activeClassName="active">About Us</NavLink></li>
-		      <li><NavLink to="/work/freshgrocer/findstores" activeClassName="active">Find A Store</NavLink></li>
-		      <li><NavLink to="/work/freshgrocer/onsale" activeClassName="active">On Sale</NavLink></li>
-		      <li><NavLink to="/work/freshgrocer/recipes" activeClassName="active">Recipes</NavLink></li>
-		      <li><NavLink to="/work/freshgrocer/contact" activeClassName="active">Contact Us</NavLink></li>
+		      <li><NavLink to="/about" activeClassName="active">About Us</NavLink></li>
+		      <li><NavLink to="/findstores" activeClassName="active">Find A Store</NavLink></li>
+		      <li><NavLink to="/onsale" activeClassName="active">On Sale</NavLink></li>
+		      <li><NavLink to="/recipes" activeClassName="active">Recipes</NavLink></li>
+		      <li><NavLink to="/contact" activeClassName="active">Contact Us</NavLink></li>
 	      </ul>
 	    </nav>
 		);
