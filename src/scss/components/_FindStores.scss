@@ -1,0 +1,48 @@
+/*---------------------------------------------------
+  Find Stores
+---------------------------------------------------*/
+
+.findstores__list {
+  width: 100%;
+  padding-left: 1em;
+  margin: 3em auto 0;
+  
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+
+.findstores__list__item {
+  list-style-type: none;
+  padding-left: 0.4em;
+  margin-bottom: 5em;
+  border-left: 1px solid #53aa0e;
+
+  &:before {
+    font-family: FontAwesome;
+    content: "\f041";
+    position: absolute;
+    left: -0.65em;
+    color: #53aa0e;
+    font-size: 50px;
+    line-height: 0.8;
+  }
+}
+
+
+/*************** MEDIA QUERIES ***************/
+
+@media (min-width: 768px) {
+
+  .findstores__list {
+    max-width: 770px;
+  }
+
+  .findstores__list__item {
+    float: left;
+    width: 50%;
+  }
+}
+

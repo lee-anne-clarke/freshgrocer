@@ -1,0 +1,183 @@
+/*---------------------------------------------------
+	Navigation
+---------------------------------------------------*/
+
+@import '../variables';
+
+
+.nav--mobile__list,
+.nav--dt__list {
+	list-style: none;
+
+  li {
+  	text-transform: uppercase;
+  }
+
+  a {
+  	font-family: 'Rubik', sans-serif;
+  }
+}
+
+.logo--mobile,
+.nav--dt {
+  border-bottom: 0.5em solid $fgGreen;
+}
+
+/******************* MOBILE *******************/
+
+.logo--mobile {
+  background-color: $fgNav;
+  padding: 1.3em 1em 1em 6em;
+  
+  img {
+    width: 208px;
+    max-width: 100%;
+  }
+}
+
+.bm-menu {
+	overflow-y: hidden !important;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: relative;
+  width: 36px;
+  height: 30px;
+  left: 28px;
+  top: -62px;
+  //background-color: $fgGreen;
+  //border: 0.6em solid $fgGreen;
+}
+
+/* Burger icon bars */
+.bm-burger-bars {
+  background: white;
+  &, &:hover, &:active {opacity: 1 !important}
+}
+
+/* Close button */
+.bm-cross-button {
+  display: none;
+}
+
+/* Close button icon */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  font-size: 1.15em;
+  padding: 1em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  padding: 0.8em;
+}
+
+/* Overlay */
+.bm-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Open menu */
+.bm-menu {
+  background-color: white;
+
+  a {
+    color: #b8b7ad;
+    &:hover, &:focus {color: #c94e50;}
+  }
+}
+
+.nav--mobile__list {
+	padding: 0;
+	margin: 0;
+  
+  li {
+    margin-bottom: 1em;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  a {
+    font-size: 1.4em;
+    text-decoration: none;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+    
+    &, &:focus {color: $fgGreen;}
+    &:hover {color: #ace9d0}
+  }
+}
+
+
+.logo--mobile + div {
+  height: 0;
+}
+
+/******************* DESKTOP *******************/
+
+.nav--dt {
+  background-color: $fgNav;
+  padding: 0.8em 1.5em 0.5em;
+}
+
+.logo--dt img {
+  width: 250px;
+  max-width: 100%
+}
+
+.nav--dt__list {
+  padding: 1em 0 0.5em;
+  margin: 0;
+  
+	li {
+		display: inline-block;	
+		margin-right: 2em;
+	}
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    
+    &:hover {border-bottom: 0.15em solid white}
+  }
+}
+
+
+/*************** MEDIA QUERIES ***************/
+
+@media (max-width: 767px) {
+	.nav--dt {display: none;}
+}
+
+@media (min-width: 768px) {
+	.logo--mobile {display: none;}
+}
+
+@media (min-width: 992px) {
+  .logo--dt, 
+  .nav--dt__list {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .nav--dt__list {
+    padding: 0.2em 0 0.5em 2em;
+  }
+  
+}

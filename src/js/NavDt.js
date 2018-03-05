@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import fglogo from './img/fglogo.png'
+import fglogo from '../img/fglogo.png'
 
 
 class NavDt extends Component {

@@ -1,5 +1,5 @@
 import React from 'react'
-import fglogo from './img/fglogo.png'
+import fglogo from '../img/fglogo.png'
 
 
 function MobileHeader() {

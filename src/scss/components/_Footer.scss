@@ -1,0 +1,68 @@
+/*---------------------------------------------------
+	Footer
+---------------------------------------------------*/
+
+@import '../_variables';
+
+
+footer {
+	padding: 1em;
+  border-top: 0.5em solid $fgGreen;
+}
+
+.footer__nav {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+  li {margin-bottom: 0.5em}
+  
+  a {
+    text-decoration: none;
+    &, &:focus {color: $fgGreen;}
+    &:hover {border-bottom: 0.05em solid $fgGreen}
+  }
+}
+
+.footer__backtotop {
+  float: right;
+  line-height: 1;
+}
+
+.backtotop__btn {
+  color: $fgGreen;
+  font-size: 4em;
+  cursor: pointer;
+  opacity: 0.6;
+  @include transitionOpacity;
+  
+  &:hover {opacity: 1}
+}
+
+
+@media (min-width: 600px) {
+  .footer__nav li {
+    display: inline-block;
+    margin-right: 1.2em;
+  }
+  
+  .footer__nav,
+  .footer__backtotop {
+    float: none;
+    display: table-cell;
+  }
+  
+  .footer__nav {
+    width: 100%;
+    vertical-align: middle;
+  }
+  
+  .footer__backtotop {
+    text-align: right;
+  }
+}
+
+
+
+

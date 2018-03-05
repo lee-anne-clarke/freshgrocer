@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { Parallax } from 'react-parallax'
-import sr from './scrollReveal.js'
+import sr from './ScrollReveal.js'
 
 //images
-import grapefruit1 from './img/home/grapefruit1.jpg'
-import pumpkins2 from './img/home/pumpkins2.jpg'
-import personholdingsb2 from './img/home/personholdingsb2.jpg'
-import cuttingboard from './img/home/cuttingboard.jpg'
+import grapefruit1 from '../img/home/grapefruit1.jpg'
+import pumpkins2 from '../img/home/pumpkins2.jpg'
+import personholdingsb2 from '../img/home/personholdingsb2.jpg'
+import cuttingboard from '../img/home/cuttingboard.jpg'
 
 
 class Homepage extends Component {

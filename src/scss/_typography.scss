@@ -1,0 +1,42 @@
+/*---------------------------------------------------
+	Typography
+---------------------------------------------------*/
+
+h1,
+h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {	     
+    font-weight: 300
+}
+
+h3 {
+  font-weight: normal;
+}
+
+p, 
+.contact__form {
+	font-family: 'Noto Sans', sans-serif;
+  line-height: 1.8;
+}
+
+hr {
+  border: none;
+  border-bottom: 0.2em solid $fgBlue;
+}
+
+.textlink {
+  text-transform: uppercase;
+  
+  &, &:active, &:focus {
+    @include linkEffects;
+    @include buttonStyle;
+  }
+  
+  &:hover {
+    @include linkEffectsHover;
+    color: white;
+  }
+}
+

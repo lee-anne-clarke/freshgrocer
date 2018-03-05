@@ -1,0 +1,112 @@
+/*---------------------------------------------------
+  Recipes
+---------------------------------------------------*/
+
+@import '../_variables';
+
+
+.innerpage__maintext--recipes {
+  text-align: center;
+  
+  & > h2, 
+  .recipes__list__item {
+    text-align: left;
+  }
+}
+
+.recipes__list {
+  @include listWrap;
+  max-width: 1080px;
+  display: inline-block;
+}
+
+.recipes__list__item {
+  margin: 0 0 5em;
+}
+
+.recipes__list__item__hover {
+  @include linkEffects;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, $fgBlue 50%, $fgGreen 50%);
+  -webkit-transition: background-position 0.3s, color 0.3s;
+  -moz-transition: background-position 0.3s, color 0.3s;
+  transition: background-position 0.3s, color 0.3s;
+  
+  &:hover {background-position: 0 -100%;}
+}
+
+.recipes__list__item__innertext {
+  background-color: rgba(255,255,255,0.93);
+  padding: 15px;
+  cursor: default;
+  h3 {margin: 0}  
+}
+
+.list__item__links {
+  opacity: 0;
+  @include transitionOpacity;
+  
+  a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {border-bottom: 1px solid black;}
+  }
+}
+
+
+.recipes__list__item__hover:hover {
+  .recipes__list__item__innertext {
+    background-color: rgba(226,243,243,0.93);
+  }
+  
+  .list__item__links {
+    opacity: 1;
+  }
+}
+
+
+.loadmore--wrap {
+  display: block;
+  color: $fgBlue;
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 0.5em;
+  clear: both;
+}
+
+.loadmore--btn {
+  display: inline;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+  &:hover {color: $fgGreen}
+}
+
+.loadmore--hide {
+  display: none;
+}
+
+
+/*************** MEDIA QUERIES ***************/
+
+@media (min-width: 1024px) {
+  .recipes__list__item__inner,
+  .recipes__list__item__innertext  {
+    min-height: 400px;
+  }
+
+  .recipes__list {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .recipes__list__item {
+    float: left;
+    width: 33%;
+    padding: 0 2em;
+  }
+}
+
