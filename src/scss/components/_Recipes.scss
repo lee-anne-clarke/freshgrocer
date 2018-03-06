@@ -9,11 +9,22 @@
   display: inline-block;
   max-width: 1080px;
   @include listWrap;
+
+	@media (min-width: 1024px) {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
 }
 
 .recipes-li {
 	text-align: left;
   margin: 0 0 5em;
+
+	@media (min-width: 1024px) {
+    float: left;
+    width: 33%;
+    padding: 0 2em;
+  }
 }
 
 .recipes-li-reveal {
@@ -75,17 +86,6 @@
   .recipes-li-inner,
   .recipes-li-innertext  {
     min-height: 400px;
-  }
-
-  .recipes-list {
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-
-  .recipes-li {
-    float: left;
-    width: 33%;
-    padding: 0 2em;
   }
 }
 

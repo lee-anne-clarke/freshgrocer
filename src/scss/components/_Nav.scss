@@ -122,6 +122,10 @@
 .nav-dt {
   background-color: $fgNav;
   padding: 0.8em 1.5em 0.5em;
+
+	@media (max-width: 767px) {
+		display: none;
+	}
 }
 
 .nav-list--dt {
@@ -132,16 +136,14 @@
 		display: inline-block;	
 		margin-right: 2em;
 	}
+
+	@media (min-width: 992px) {
+    padding: 0.2em 0 0.5em 2em;
+  }
 }
 
 
 /*************** MEDIA QUERIES ***************/
-
-@media (max-width: 767px) {
-	.nav-dt {
-		display: none;
-	}
-}
 
 @media (min-width: 768px) {
 	.header-mobile,
@@ -161,9 +163,5 @@
   .nav-list--dt {
     display: inline-block;
     vertical-align: middle;
-  }
-  
-  .nav-list--dt {
-    padding: 0.2em 0 0.5em 2em;
   }
 }
