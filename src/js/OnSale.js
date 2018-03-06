@@ -43,7 +43,7 @@ class OnSale extends Component {
     return (
       <main className="innerpage" id="page-wrap">
 
-        <div className="u-relative"> 
+        <section className="u-relative"> 
           <div className="innerpage__title" ref={(r) => { this.innerpTitle = r; }}>
             <h1>On Sale</h1>
           </div>
@@ -51,9 +51,10 @@ class OnSale extends Component {
           <div ref={(r) => { this.headerImg = r; }}>
             <Parallax bgImage={onsaleHeader} strength={300} />
           </div>
-        </div>
+        </section>
 
-        <div className="maintext">
+
+        <section className="container">
           <h2 ref={(r) => { this.mainSubheader = r; }}>Check out this week's featured items on sale:</h2>
 
           <div className="onsale-list u-clearfix">
@@ -184,7 +185,7 @@ class OnSale extends Component {
             </div>
 
           </div> {/* end of .onsale-list.clearfix */}
-        </div> {/* end of .maintext */}
+        </section> {/* end of .container */}
       </main>
     );
   }

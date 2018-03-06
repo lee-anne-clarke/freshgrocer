@@ -37,9 +37,9 @@ class ContactUs extends Component {
 
   render () {
     return (
-      <main className="innerpage" id="page-wrap">
+      <main className="contact innerpage" id="page-wrap">
 
-        <div className="u-relative"> 
+        <section className="u-relative"> 
           <div className="innerpage__title" ref={(r) => { this.innerpTitle = r; }}>
             <h1>Contact Us</h1>
           </div>
@@ -47,9 +47,10 @@ class ContactUs extends Component {
           <div ref={(r) => { this.headerImg = r; }}>
             <Parallax bgImage={contactHeader} strength={300} />
           </div>
-        </div>
+        </section>
 
-        <div className="maintext">
+
+        <section className="container">
           <h3>Call</h3>
           <p><b>1-800-746-7748</b><br />
           Monday - Friday 8am-6pm<br />
@@ -68,50 +69,50 @@ class ContactUs extends Component {
           <h3>Send A Message</h3>
 
           <form className="form" id="contactForm">
-              <div className="form__group">
-                <label htmlFor="reason" className="form__label">I have a question about: <span className="form__reqstar">*</span></label>
-                <select id="selectbox" name="reason" className="form__input">
-                  <option>Mauris vel pretium ligula, ut semper tortor</option>
-                  <option>Aliquam a leo eu ante imperdiet </option>
-                  <option>Aenean lobortis dignissim suscipit</option>
-                  <option>Sed orci neque, elementum bibendum lacinia nec</option>
-                  <option>Donec interdum metus sed iaculis lobortis</option>
-                  <option>Phasellus eleifend eros elementum lectus</option>
-                </select>
-              </div>
+		        <div className="form__group">
+		          <label htmlFor="reason" className="form__label">I have a question about: <span className="form__reqstar">*</span></label>
+		          <select id="selectbox" name="reason" className="form__input">
+		            <option>Mauris vel pretium ligula, ut semper tortor</option>
+		            <option>Aliquam a leo eu ante imperdiet </option>
+		            <option>Aenean lobortis dignissim suscipit</option>
+		            <option>Sed orci neque, elementum bibendum lacinia nec</option>
+		            <option>Donec interdum metus sed iaculis lobortis</option>
+		            <option>Phasellus eleifend eros elementum lectus</option>
+		          </select>
+		        </div>
 
-              <div className="form__group">
-                <label className="form__label" htmlFor="name">Name: <span className="form__reqstar">*</span></label>
-                <input className="form__input" type="text" name="name" id="contactName" />
-              </div>
+		        <div className="form__group">
+		          <label className="form__label" htmlFor="name">Name: <span className="form__reqstar">*</span></label>
+		          <input className="form__input" type="text" name="name" id="contactName" />
+		        </div>
 
-              <div className="form__group">
-                <label className="form__label" htmlFor="mail">E-mail: <span className="form__reqstar">*</span></label>
-                <input className="form__input" type="email" name="email" id="contactEmail" />
-              </div>
+		        <div className="form__group">
+		          <label className="form__label" htmlFor="mail">E-mail: <span className="form__reqstar">*</span></label>
+		          <input className="form__input" type="email" name="email" id="contactEmail" />
+		        </div>
 
-              <div className="form__group">
-                <label className="form__label" htmlFor="phone">Phone Number:</label>
-                <input className="form__input" type="tel" name="phone" id="contactPhone" />
-              </div>
+		        <div className="form__group">
+		          <label className="form__label" htmlFor="phone">Phone Number:</label>
+		          <input className="form__input" type="tel" name="phone" id="contactPhone" />
+		        </div>
 
-              <div className="form__group">
-                <label htmlFor="msg" className="form__label">Message: <span className="form__reqstar">*</span></label>
-                <textarea className="form__input" rows="6" name="message" id="contactMsg"></textarea>
-              </div>
+		        <div className="form__group">
+		          <label htmlFor="msg" className="form__label">Message: <span className="form__reqstar">*</span></label>
+		          <textarea className="form__input" rows="6" name="message" id="contactMsg"></textarea>
+		        </div>
 
-              <div className="contact__invalidmsg" id="formInvalidMsg">
-              	Please fill out all required fields.
-              </div>
+		        <p className="contact__invalidmsg" id="formInvalidMsg">
+		        	Please fill out all required fields.
+		        </p>
 
-              <button className="btn btn--submit" type="submit">Submit</button>
+		        <button className="btn btn--submit" type="submit">Submit</button>
           </form>
 
           <div className="contact__validmsg" id="formValidMsg">
-              <h3>Thank you! We will get back to you as soon as we can.</h3>
+						<h3>Thank you! We will get back to you as soon as we can.</h3>
           </div>
 
-        </div> {/* end of .maintext */}
+        </section> {/* end of .container */}
       </main>
     );
   }

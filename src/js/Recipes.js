@@ -69,7 +69,7 @@ class Recipes extends Component {
     return (
       <main className="innerpage" id="page-wrap">
 
-        <div className="u-relative"> 
+        <section className="u-relative"> 
           <div className="innerpage__title" ref={(r) => { this.innerpTitle = r; }}>
             <h1>Recipes</h1>
           </div>
@@ -77,13 +77,13 @@ class Recipes extends Component {
           <div ref={(r) => { this.headerImg = r; }}>
             <Parallax bgImage={recipesHeader} strength={300} />
           </div>
-        </div>
+        </section>
   
   
-        <div className="maintext maintext--recipes">
+        <section className="container u-text-center">
           <h2 className="u-text-left" ref={(r) => { this.mainSubheader = r; }}>Check out the latest recipes:</h2>
     
-          <div className="recipes-list u-clearfix" id="recipesList">
+          <div className="recipes-list u-clearfix">
             
             <figure className="recipes-li" ref={(r) => { this.listItem1 = r; }}>
               <div className="recipes-li-reveal">
@@ -257,7 +257,7 @@ class Recipes extends Component {
             
           </div> {/* end of .recipes-list.clearfix */}
   
-        </div> {/* end of .maintext */}
+        </section> {/* end of .container */}
 
       </main>
     );

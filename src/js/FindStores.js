@@ -33,7 +33,7 @@ class FindStores extends Component {
     return (
 			<main className="innerpage" id="page-wrap">
 
-				<div className="u-relative"> 
+				<section className="u-relative"> 
 					<div className="innerpage__title" ref={(r) => { this.innerpTitle = r; }}>
 						<h1>Find A Store</h1>
 					</div>
@@ -41,10 +41,10 @@ class FindStores extends Component {
 					<div ref={(r) => { this.headerImg = r; }}>
 						<Parallax bgImage={findStoresHeader} strength={300} />
 					</div>
-				</div>
+				</section>
 
 
-				<div className="maintext">
+				<section className="container">
 					<h2 ref={(r) => { this.mainSubheader = r; }}>Come visit us at one of the following locations:</h2>
 
 					<ul className="findstores-list u-clearfix">
@@ -112,7 +112,7 @@ class FindStores extends Component {
 						</li>
 					</ul>
 
-				</div>
+				</section>
 			</main>
     );
   }

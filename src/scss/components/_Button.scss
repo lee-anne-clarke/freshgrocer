@@ -20,9 +20,11 @@
 }
 
 .btn--submit {
-  border: none;
-  box-shadow: none;
-  padding: 10px 30px;
+	&, &:active, &:focus {
+	  border: none;
+	  box-shadow: none;
+	  padding: 10px 30px;
+	}
 }
 
 
@@ -47,14 +49,6 @@
 		color: #ace9d0
 	}
 }
-
-/* Burger menu */
-/*
-.bm-menu a {
-  color: #b8b7ad;
-  &:hover, &:focus {color: #c94e50;}
-}
-*/
 
 .nav-list--dt a {
   color: white;

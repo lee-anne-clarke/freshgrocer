@@ -35,43 +35,43 @@ class Homepage extends Component {
       <main className="homepage" id="page-wrap">
 
         <Parallax bgImage={grapefruit1} strength={300}>
-          <div className="homepage__callout" ref={(r) => { this.box1 = r; }}> 
+          <section className="homepage__callout" ref={(r) => { this.box1 = r; }}> 
             <h1>Welcome to The Fresh Grocer</h1>
             <h2>Your friendly neighborhood grocery store</h2>
             <p>
             	<NavLink to="/findstores" className="btn" activeClassName="active">Find a store near you</NavLink>
             </p>
-          </div>
+          </section>
         </Parallax>
     
         <Parallax bgImage={pumpkins2} strength={300}>
-          <div className="homepage__callout" ref={(r) => { this.box2 = r; }}> 
+          <section className="homepage__callout" ref={(r) => { this.box2 = r; }}> 
             <h1>Get ready for Fall</h1>
             <h2>Find the best ingredients for your holiday meals</h2>
             <p>
             	<NavLink to="/onsale" className="btn" activeClassName="active">Check out the latest deals</NavLink>
             </p>
-          </div>
+          </section>
         </Parallax>
     
         <Parallax bgImage={personholdingsb2} strength={300}>
-          <div className="homepage__callout" ref={(r) => { this.box3 = r; }}> 
+          <section className="homepage__callout" ref={(r) => { this.box3 = r; }}> 
             <h1>The freshest ingredients</h1>
             <h2>All of our products are of the highest quality</h2>
             <p>
             	<NavLink to="/about" className="btn" activeClassName="active">Read about our history</NavLink>
             </p>
-          </div>
+          </section>
         </Parallax>
 
         <Parallax bgImage={cuttingboard} strength={300}>
-          <div className="homepage__callout" ref={(r) => { this.box4 = r; }}> 
+          <section className="homepage__callout" ref={(r) => { this.box4 = r; }}> 
             <h1>Recipe ideas</h1>
             <h2>Get expert cooking advice from the best chefs in the tri-state area</h2>
             <p>
             	<NavLink to="/recipes" className="btn" activeClassName="active">Find a great recipe</NavLink>
             </p>
-          </div>
+          </section>
         </Parallax>
 
       </main>
