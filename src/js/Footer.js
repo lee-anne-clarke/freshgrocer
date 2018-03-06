@@ -14,7 +14,7 @@ class Footer extends Component {
 		return (
 		  <footer className="footer u-clearfix">
 		  	<ul className="footer__nav">
-		  		<li>&copy; Fresh Grocer {new Date().getFullYear()}</li>
+		  		<li>&copy; The Fresh Grocer {new Date().getFullYear()}</li>
 		  		<li><a href="#">Careers</a></li>
 		  		<li><a href="#">Terms of Use</a></li>
 		  		<li><a href="#">Privacy Policy</a></li>

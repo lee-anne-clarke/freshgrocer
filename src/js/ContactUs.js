@@ -1,37 +1,18 @@
 import React, { Component } from 'react'
 import { Parallax } from 'react-parallax'
-import sr from './ScrollReveal.js'
+import { innerpTitleConfig, headerImgConfig } from './sr/srConfig'
+import sr from './sr/ScrollReveal'
 
 //images
-import contactHeader from '../img/contactus/berriesinheart.jpg'
+import contactHeader from '../img/contactus/pie1.jpg'
 
 
 class ContactUs extends Component {
   
   componentDidMount = () => {
-    const innerpageTitleConfig = {
-      origin: 'top',
-      duration: 1800,
-      delay: 300,
-      distance: 0,
-      scale: 1,
-      easing: 'ease',
-    }
-
-    sr.reveal(this.refs.innerpageTitle, innerpageTitleConfig);
-
-
-    const headerImgConfig = {
-      origin: 'top',
-      duration: 1000,
-      delay: 100,
-      distance: 0,
-      scale: 1,
-      easing: 'ease',
-    }
-
-    sr.reveal(this.refs.headerImg, headerImgConfig);
-
+    //Scroll Reveal
+    sr.reveal(this.innerpTitle, innerpTitleConfig);
+    sr.reveal(this.headerImg, headerImgConfig);
 
     //Contact form
     let contactForm = document.getElementById('contactForm');
@@ -59,20 +40,16 @@ class ContactUs extends Component {
       <main className="innerpage" id="page-wrap">
 
         <div className="u-relative"> 
-          <div className="innerpage__title" ref="innerpageTitle">
+          <div className="innerpage__title" ref={(r) => { this.innerpTitle = r; }}>
             <h1>Contact Us</h1>
           </div>
 
-          <div ref="headerImg">
+          <div ref={(r) => { this.headerImg = r; }}>
             <Parallax bgImage={contactHeader} strength={300} />
           </div>
         </div>
 
         <div className="maintext">
-          <h2>How can we help you?</h2>
-
-          <hr />
-
           <h3>Call</h3>
           <p><b>1-800-746-7748</b><br />
           Monday - Friday 8am-6pm<br />
@@ -81,7 +58,7 @@ class ContactUs extends Component {
           <hr />
 
           <h3>Write</h3>
-          <p>Fresh Grocer c/o<br />
+          <p>The Fresh Grocer c/o<br />
           ShopRite Customer Care<br />
           PO Box 7812<br />
           Edison, NJ 08818</p>

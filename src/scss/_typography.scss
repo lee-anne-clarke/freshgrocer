@@ -35,9 +35,8 @@ hr {
 
 .maintext--recipes {
   text-align: center;
-  
-  & > h2, 
-  .recipes__li {
-    text-align: left;
-  }
+}
+
+.recipes-li {
+	text-align: left;
 }

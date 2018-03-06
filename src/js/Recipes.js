@@ -1,94 +1,31 @@
 import React, { Component } from 'react'
 import { Parallax } from 'react-parallax'
-import sr from './ScrollReveal.js'
+import { 
+	innerpTitleConfig, 
+	headerImgConfig,
+	mainSubheader } from './sr/srConfig'
+import sr from './sr/ScrollReveal'
 
 //images
 import recipesHeader from '../img/recipes/foodontable.jpg'
 
-import cookiesImg from '../img/recipes/cookies2.jpg'
-import cookingstuff1Img from '../img/recipes/cookingstuff1.jpg'
-import pieImg from '../img/recipes/pie2.jpg'
-import ricebowlImg from '../img/recipes/ricebowl.jpg'
-import veggiesImg from '../img/recipes/veggies2.jpg'
-import platterImg from '../img/recipes/platter.jpg'
-import pastaImg from '../img/recipes/drypasta.jpg'
-import grillImg from '../img/recipes/grill.jpg'
-import cookingstuff2Img from '../img/recipes/cookingstuff2.jpg'
-
-
-let recipe1Bg = {
-	backgroundImage: 'url(' + cookiesImg + ')',
-	backgroundSize: 'cover'
-}
-
-let recipe2Bg = {
-	backgroundImage: 'url(' + cookingstuff1Img + ')',
-	backgroundSize: 'cover'
-}
-
-let recipe3Bg = {
-	backgroundImage: 'url(' + pieImg + ')',
-	backgroundSize: 'cover'
-}
-
-let recipe4Bg = {
-	backgroundImage: 'url(' + ricebowlImg + ')',
-	backgroundSize: 'cover'
-}
-
-let recipe5Bg = {
-	backgroundImage: 'url(' + veggiesImg + ')',
-	backgroundSize: 'cover'
-}
-
-let recipe6Bg = {
-	backgroundImage: 'url(' + platterImg + ')',
-	backgroundSize: 'cover'
-}
-
-let recipe7Bg = {
-	backgroundImage: 'url(' + pastaImg + ')',
-	backgroundSize: 'cover'
-}
-
-let recipe8Bg = {
-	backgroundImage: 'url(' + grillImg + ')',
-	backgroundSize: 'cover'
-}
-
-let recipe9Bg = {
-	backgroundImage: 'url(' + cookingstuff2Img + ')',
-	backgroundSize: 'cover'
-}
+import {
+	recipe1Bg,
+	recipe2Bg,
+	recipe3Bg,
+	recipe4Bg,
+	recipe5Bg,
+	recipe6Bg,
+	recipe7Bg,
+	recipe8Bg,
+	recipe9Bg
+} from './recipesBgImages'
 
 
 class Recipes extends Component {
 
   componentDidMount = () => {
-    const innerpageTitleConfig = {
-      origin: 'top',
-      duration: 1800,
-      delay: 300,
-      distance: 0,
-      scale: 1,
-      easing: 'ease',
-    }
-
-    sr.reveal(this.refs.innerpageTitle, innerpageTitleConfig);
-
-
-    const headerImgConfig = {
-      origin: 'top',
-      duration: 1000,
-      delay: 100,
-      distance: 0,
-      scale: 1,
-      easing: 'ease',
-    }
-
-    sr.reveal(this.refs.headerImg, headerImgConfig);
-
-    
+ 		//Scroll Reveal
     const listItem1Config = {
       origin: 'top',
       duration: 1000,
@@ -96,7 +33,7 @@ class Recipes extends Component {
       scale: 1,
       easing: 'ease',
     }
-    
+
     const listItem2Config = {
       origin: 'top',
       duration: 1000,
@@ -112,16 +49,19 @@ class Recipes extends Component {
       scale: 1,
       easing: 'ease',
     }
-    
-    sr.reveal(this.refs.listItem1, listItem1Config);
-    sr.reveal(this.refs.listItem2, listItem2Config);
-    sr.reveal(this.refs.listItem3, listItem3Config);
-    sr.reveal(this.refs.listItem4, listItem1Config);
-    sr.reveal(this.refs.listItem5, listItem2Config);
-    sr.reveal(this.refs.listItem6, listItem3Config);
-    sr.reveal(this.refs.listItem7, listItem1Config);
-    sr.reveal(this.refs.listItem8, listItem2Config); 
-    sr.reveal(this.refs.listItem9, listItem3Config);     
+
+		sr.reveal(this.innerpTitle, innerpTitleConfig);
+    sr.reveal(this.headerImg, headerImgConfig);
+    sr.reveal(this.mainSubheader, mainSubheader);
+    sr.reveal(this.listItem1, listItem1Config);
+    sr.reveal(this.listItem2, listItem2Config);
+    sr.reveal(this.listItem3, listItem3Config);
+    sr.reveal(this.listItem4, listItem1Config);
+    sr.reveal(this.listItem5, listItem2Config);
+    sr.reveal(this.listItem6, listItem3Config);
+    sr.reveal(this.listItem7, listItem1Config);
+    sr.reveal(this.listItem8, listItem2Config); 
+    sr.reveal(this.listItem9, listItem3Config);     
   }
 
 
@@ -130,22 +70,22 @@ class Recipes extends Component {
       <main className="innerpage" id="page-wrap">
 
         <div className="u-relative"> 
-          <div className="innerpage__title" ref="innerpageTitle">
+          <div className="innerpage__title" ref={(r) => { this.innerpTitle = r; }}>
             <h1>Recipes</h1>
           </div>
     
-          <div ref="headerImg">
+          <div ref={(r) => { this.headerImg = r; }}>
             <Parallax bgImage={recipesHeader} strength={300} />
           </div>
         </div>
   
   
         <div className="maintext maintext--recipes">
-          <h2>Check out the latest recipes:</h2>
+          <h2 className="u-text-left" ref={(r) => { this.mainSubheader = r; }}>Check out the latest recipes:</h2>
     
           <div className="recipes-list u-clearfix" id="recipesList">
             
-            <figure className="recipes-li" ref="listItem1">
+            <figure className="recipes-li" ref={(r) => { this.listItem1 = r; }}>
               <div className="recipes-li-reveal">
                 <figcaption className="recipes-li-inner" style={recipe1Bg}>
                   <div className="recipes-li-innertext">
@@ -164,7 +104,7 @@ class Recipes extends Component {
             
             
             
-            <figure className="recipes-li" ref="listItem2">
+            <figure className="recipes-li" ref={(r) => { this.listItem2 = r; }}>
               <div className="recipes-li-reveal">
                 <figcaption className="recipes-li-inner" style={recipe2Bg}>
                   <div className="recipes-li-innertext">
@@ -183,7 +123,7 @@ class Recipes extends Component {
             
             
             
-            <figure className="recipes-li" ref="listItem3">
+            <figure className="recipes-li" ref={(r) => { this.listItem3 = r; }}>
               <div className="recipes-li-reveal">
                 <figcaption className="recipes-li-inner" style={recipe3Bg}>
                   <div className="recipes-li-innertext">
@@ -202,7 +142,7 @@ class Recipes extends Component {
             
             
             
-            <figure className="recipes-li" ref="listItem4">
+            <figure className="recipes-li" ref={(r) => { this.listItem4 = r; }}>
               <div className="recipes-li-reveal">
                 <figcaption className="recipes-li-inner" style={recipe4Bg}>
                   <div className="recipes-li-innertext">
@@ -221,7 +161,7 @@ class Recipes extends Component {
             
             
             
-            <figure className="recipes-li" ref="listItem5">
+            <figure className="recipes-li" ref={(r) => { this.listItem5 = r; }}>
               <div className="recipes-li-reveal">
                 <figcaption className="recipes-li-inner" style={recipe5Bg}>
                   <div className="recipes-li-innertext">
@@ -240,7 +180,7 @@ class Recipes extends Component {
             
             
             
-            <figure className="recipes-li" ref="listItem6">
+            <figure className="recipes-li" ref={(r) => { this.listItem6 = r; }}>
               <div className="recipes-li-reveal">
                 <figcaption className="recipes-li-inner" style={recipe6Bg}>
                   <div className="recipes-li-innertext">
@@ -259,7 +199,7 @@ class Recipes extends Component {
             
             
             
-            <figure className="recipes-li" ref="listItem7">
+            <figure className="recipes-li" ref={(r) => { this.listItem7 = r; }}>
               <div className="recipes-li-reveal">
                 <figcaption className="recipes-li-inner" style={recipe7Bg}>
                   <div className="recipes-li-innertext">
@@ -278,7 +218,7 @@ class Recipes extends Component {
             
             
             
-            <figure className="recipes-li" ref="listItem8">
+            <figure className="recipes-li" ref={(r) => { this.listItem8 = r; }}>
               <div className="recipes-li-reveal">
                 <figcaption className="recipes-li-inner" style={recipe8Bg}>
                   <div className="recipes-li-innertext">
@@ -297,7 +237,7 @@ class Recipes extends Component {
             
             
             
-            <figure className="recipes-li" ref="listItem9">
+            <figure className="recipes-li" ref={(r) => { this.listItem9 = r; }}>
               <div className="recipes-li-reveal">
                 <figcaption className="recipes-li-inner" style={recipe9Bg}>
                   <div className="recipes-li-innertext">

@@ -31,9 +31,9 @@ hr {
 
 .maintext--recipes {
   text-align: center; }
-  .maintext--recipes > h2,
-  .maintext--recipes .recipes__li {
-    text-align: left; }
+
+.recipes-li {
+  text-align: left; }
 
 /*---------------------------------------------------
 	Buttons and Hyperlinks
@@ -445,6 +445,9 @@ hr {
   .recipes-li-reveal:hover {
     background-position: 0 -100%; }
 
+.recipes-li-inner {
+  background-size: cover; }
+
 .recipes-li-innertext {
   background-color: rgba(255, 255, 255, 0.93);
   padding: 15px;
@@ -511,3 +514,6 @@ hr {
 
 .u-relative {
   position: relative; }
+
+.u-text-left {
+  text-align: left; }

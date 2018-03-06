@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { HashRouter as Router, Route } from 'react-router-dom'
 import ScrollToTop from './js/ScrollToTop'
 import MobileHeader from './js/MobileHeader'
-import NavMobile from './js/NavMobile'
-import NavDt from './js/NavDt'
+import NavMobile from './js/nav/NavMobile'
+import NavDt from './js/nav/NavDt'
 import Homepage from './js/Homepage'
 import AboutUs from './js/AboutUs'
 import FindStores from './js/FindStores'
@@ -26,12 +26,12 @@ class App extends Component {
 		        <NavMobile />
 		        <NavDt />
 		        
-				    <Route exact path="/work/freshgrocer/" component={Homepage} />
-				    <Route path="/work/freshgrocer/about" component={AboutUs} />
-				    <Route path="/work/freshgrocer/findstores" component={FindStores} />
-						<Route path="/work/freshgrocer/onsale" component={OnSale} />
-						<Route path="/work/freshgrocer/recipes" component={Recipes} />
-				    <Route path="/work/freshgrocer/contact" component={ContactUs} />
+				    <Route exact path="/" component={Homepage} />
+				    <Route path="/about" component={AboutUs} />
+				    <Route path="/findstores" component={FindStores} />
+						<Route path="/onsale" component={OnSale} />
+						<Route path="/recipes" component={Recipes} />
+				    <Route path="/contact" component={ContactUs} />
 
 				    <Footer />
 		      </div>

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 // images
-import fglogo from '../img/fglogo.png'
+import fglogo from '../../img/fglogo.png'
 
 
 class NavDt extends Component {
@@ -10,7 +10,7 @@ class NavDt extends Component {
 		return (
 	    <nav className="nav-dt">
 	      <header className="header-dt">
-	        <Link to="/"><img src={fglogo} alt="Fresh Grocer logo" /></Link>
+	        <Link to="/"><img src={fglogo} alt="The Fresh Grocer logo" /></Link>
 	      </header>
 
 	      <ul className="nav-list nav-list--dt">

@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
 import { Parallax } from 'react-parallax'
-import sr from './ScrollReveal.js'
+import { 
+	innerpTitleConfig, 
+	headerImgConfig,
+	mainSubheader,  
+	listItemConfig } from './sr/srConfig'
+import sr from './sr/ScrollReveal'
 
 //images
-import onsaleHeader from '../img/onsale/pie1.jpg'
+import onsaleHeader from '../img/onsale/fruitsveggies2.jpg'
 import pumpkins from '../img/onsale/pumpkins1.jpg'
 import pastries from '../img/onsale/pastries1.jpg'
 import tomatoes from '../img/onsale/tomatoes1.jpg'
@@ -18,46 +23,19 @@ import cupcakes from '../img/onsale/cupcakes.jpg'
 class OnSale extends Component {
 
   componentDidMount = () => {
-    const innerpageTitleConfig = {
-      origin: 'top',
-      duration: 1800,
-      delay: 300,
-      distance: 0,
-      scale: 1,
-      easing: 'ease',
-    }
-
-    sr.reveal(this.refs.innerpageTitle, innerpageTitleConfig);
-
-    const headerImgConfig = {
-      origin: 'top',
-      duration: 1000,
-      delay: 100,
-      distance: 0,
-      scale: 1,
-      easing: 'ease',
-    }
-
-    sr.reveal(this.refs.headerImg, headerImgConfig);
-
-    const listItemConfig = {
-      origin: 'top',
-      duration: 1000,
-      delay: 90,
-      
-      scale: 1,
-      easing: 'ease',
-    }
-
-    sr.reveal(this.refs.listItem1, listItemConfig);
-    sr.reveal(this.refs.listItem2, listItemConfig);
-    sr.reveal(this.refs.listItem3, listItemConfig);
-    sr.reveal(this.refs.listItem4, listItemConfig);
-    sr.reveal(this.refs.listItem5, listItemConfig);
-    sr.reveal(this.refs.listItem6, listItemConfig);
-    sr.reveal(this.refs.listItem7, listItemConfig);
-    sr.reveal(this.refs.listItem8, listItemConfig);
-    sr.reveal(this.refs.listItem9, listItemConfig);
+  	//Scroll Reveal
+    sr.reveal(this.innerpTitle, innerpTitleConfig);
+    sr.reveal(this.headerImg, headerImgConfig);
+    sr.reveal(this.mainSubheader, mainSubheader);
+    sr.reveal(this.listItem1, listItemConfig);
+    sr.reveal(this.listItem2, listItemConfig);
+    sr.reveal(this.listItem3, listItemConfig);
+    sr.reveal(this.listItem4, listItemConfig);
+    sr.reveal(this.listItem5, listItemConfig);
+    sr.reveal(this.listItem6, listItemConfig);
+    sr.reveal(this.listItem7, listItemConfig);
+    sr.reveal(this.listItem8, listItemConfig);
+    sr.reveal(this.listItem9, listItemConfig);
   }
 
 
@@ -66,21 +44,21 @@ class OnSale extends Component {
       <main className="innerpage" id="page-wrap">
 
         <div className="u-relative"> 
-          <div className="innerpage__title" ref="innerpageTitle">
+          <div className="innerpage__title" ref={(r) => { this.innerpTitle = r; }}>
             <h1>On Sale</h1>
           </div>
 
-          <div ref="headerImg">
+          <div ref={(r) => { this.headerImg = r; }}>
             <Parallax bgImage={onsaleHeader} strength={300} />
           </div>
         </div>
 
-        <div className="maintext" ref="mainText1">
-          <h2>Check out this week's featured items on sale:</h2>
+        <div className="maintext">
+          <h2 ref={(r) => { this.mainSubheader = r; }}>Check out this week's featured items on sale:</h2>
 
           <div className="onsale-list u-clearfix">
 
-            <div className="onsale-li" ref="listItem1">
+            <div className="onsale-li" ref={(r) => { this.listItem1 = r; }}>
               <div className="onsale-li-inner">
                 <img src={pumpkins} alt="" />
 
@@ -94,7 +72,7 @@ class OnSale extends Component {
             </div>
 
 
-            <div className="onsale-li" ref="listItem2">
+            <div className="onsale-li" ref={(r) => { this.listItem2 = r; }}>
               <div className="onsale-li-inner">
                 <img src={pastries} alt="" />
 
@@ -108,7 +86,7 @@ class OnSale extends Component {
             </div>
 
 
-            <div className="onsale-li" ref="listItem3">
+            <div className="onsale-li" ref={(r) => { this.listItem3 = r; }}>
               <div className="onsale-li-inner">
                 <img src={tomatoes} alt="" />
 
@@ -122,7 +100,7 @@ class OnSale extends Component {
             </div>
 
 
-            <div className="onsale-li" ref="listItem4">
+            <div className="onsale-li" ref={(r) => { this.listItem4 = r; }}>
               <div className="onsale-li-inner">
                 <img src={fruitsveggies} alt="" />
 
@@ -136,7 +114,7 @@ class OnSale extends Component {
             </div>
 
 
-            <div className="onsale-li" ref="listItem5">
+            <div className="onsale-li" ref={(r) => { this.listItem5 = r; }}>
               <div className="onsale-li-inner">
                 <img src={strawberries} alt="" />
 
@@ -150,7 +128,7 @@ class OnSale extends Component {
             </div>
 
 
-            <div className="onsale-li" ref="listItem6">
+            <div className="onsale-li" ref={(r) => { this.listItem6 = r; }}>
               <div className="onsale-li-inner">
                 <img src={pie2} alt="" />
 
@@ -164,7 +142,7 @@ class OnSale extends Component {
             </div>
 
 
-            <div className="onsale-li" ref="listItem7">
+            <div className="onsale-li" ref={(r) => { this.listItem7 = r; }}>
               <div className="onsale-li-inner">
                 <img src={apples} alt="" />
 
@@ -178,7 +156,7 @@ class OnSale extends Component {
             </div>
 
 
-            <div className="onsale-li" ref="listItem8">
+            <div className="onsale-li" ref={(r) => { this.listItem8 = r; }}>
               <div className="onsale-li-inner">
                 <img src={coffebeans} alt="" />
 
@@ -192,7 +170,7 @@ class OnSale extends Component {
             </div>
 
 
-            <div className="onsale-li" ref="listItem9">
+            <div className="onsale-li" ref={(r) => { this.listItem9 = r; }}>
               <div className="onsale-li-inner">
                 <img src={cupcakes} alt="" />
 

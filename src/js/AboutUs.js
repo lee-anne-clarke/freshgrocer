@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Parallax } from 'react-parallax'
-import sr from './ScrollReveal.js'
+import { innerpTitleConfig, headerImgConfig } from './sr/srConfig'
+import sr from './sr/ScrollReveal'
 
 //images
 import aboutHeader from '../img/aboutus/vinetomatoes2.jpg'
@@ -12,27 +13,9 @@ import veggies from '../img/aboutus/veggies4.jpg'
 class AboutUs extends Component {
 
   componentDidMount = () => {
-    const innerpageTitleConfig = {
-      origin: 'top',
-      duration: 1800,
-      delay: 300,
-      distance: 0,
-      scale: 1,
-      easing: 'ease',
-    }
-
-    sr.reveal(this.refs.innerpageTitle, innerpageTitleConfig);
-
-    const headerImgConfig = {
-      origin: 'top',
-      duration: 1000,
-      delay: 100,
-      distance: 0,
-      scale: 1,
-      easing: 'ease',
-    }
-
-    sr.reveal(this.refs.headerImg, headerImgConfig);
+  	//Scroll Reveal
+    sr.reveal(this.innerpTitleAbout, innerpTitleConfig);
+    sr.reveal(this.headerImgAbout, headerImgConfig);
   }
 
 
@@ -41,11 +24,11 @@ class AboutUs extends Component {
       <main className="innerpage" id="page-wrap">
 
         <div className="u-relative"> 
-          <div className="innerpage__title" ref="innerpageTitle">
+          <div className="innerpage__title" ref={(r) => { this.innerpTitleAbout = r; }}>
             <h1>About Us</h1>
           </div>
 
-          <div ref="headerImg">
+          <div ref={(r) => { this.headerImgAbout = r; }}>
             <Parallax bgImage={aboutHeader} strength={300} />
           </div>
         </div>
