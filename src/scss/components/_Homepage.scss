@@ -2,12 +2,16 @@
 	Homepage
 ---------------------------------------------------*/
 
+/*
 .homepage {
   margin-left: -1px;
 }
+*/
 
-.homepage .react-parallax-content {
+.homebox {
   min-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 2em;
   padding-left: 3em;
   
@@ -17,7 +21,7 @@
   }
 }
 
-.homepage__callout {
+.homebox__inner {
   background-color: $fgLightBlue;
 	max-width: 400px;
   padding: 3em;

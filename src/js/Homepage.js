@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
-import { Parallax } from 'react-parallax'
+import HomeBox from './HomeBox'
 import sr from './sr/ScrollReveal'
 
 //images
@@ -14,6 +13,15 @@ class Homepage extends Component {
 
   componentDidMount = () => {
     //Scroll Reveal
+		const homeConfig1 = {
+		  origin: 'left',
+		  duration: 1000,
+		  delay: 350,
+		  distance: '500px',
+		  scale: 1,
+		  easing: 'ease',
+		}
+
 		const homeConfig = {
 		  origin: 'left',
 		  duration: 1000,
@@ -23,7 +31,7 @@ class Homepage extends Component {
 		  easing: 'ease',
 		}
 
-    sr.reveal(this.box1, homeConfig);
+    sr.reveal(this.box1, homeConfig1);
     sr.reveal(this.box2, homeConfig);
     sr.reveal(this.box3, homeConfig);
     sr.reveal(this.box4, homeConfig);
@@ -34,45 +42,41 @@ class Homepage extends Component {
     return (
       <main className="homepage" id="page-wrap">
 
-        <Parallax bgImage={grapefruit1} strength={300}>
-          <section className="homepage__callout" ref={(r) => { this.box1 = r; }}> 
-            <h1>Welcome to The Fresh Grocer</h1>
-            <h2>Your friendly neighborhood grocery store</h2>
-            <p>
-            	<NavLink to="/findstores" className="btn" activeClassName="active">Find a store near you</NavLink>
-            </p>
-          </section>
-        </Parallax>
-    
-        <Parallax bgImage={pumpkins2} strength={300}>
-          <section className="homepage__callout" ref={(r) => { this.box2 = r; }}> 
-            <h1>Get ready for Fall</h1>
-            <h2>Find the best ingredients for your holiday meals</h2>
-            <p>
-            	<NavLink to="/onsale" className="btn" activeClassName="active">Check out the latest deals</NavLink>
-            </p>
-          </section>
-        </Parallax>
-    
-        <Parallax bgImage={personholdingsb2} strength={300}>
-          <section className="homepage__callout" ref={(r) => { this.box3 = r; }}> 
-            <h1>The freshest ingredients</h1>
-            <h2>All of our products are of the highest quality</h2>
-            <p>
-            	<NavLink to="/about" className="btn" activeClassName="active">Read about our history</NavLink>
-            </p>
-          </section>
-        </Parallax>
+        <HomeBox 
+        	bgImage={grapefruit1} 
+        	headline="Welcome to The Fresh Grocer"
+        	subhead="Your friendly neighborhood grocery store"
+        	btnUrl="findstores"
+        	btnText="Find a store near you" 
+        	reference={(r) => { this.box1 = r; }}
+        />
+        
+        <HomeBox 
+        	bgImage={pumpkins2}
+        	headline="Get ready for Fall"
+        	subhead="Find the best ingredients for your holiday meals"
+        	btnUrl="onsale"
+        	btnText="Check out the latest deals"
+        	reference={(r) => { this.box2 = r; }}
+        />
 
-        <Parallax bgImage={cuttingboard} strength={300}>
-          <section className="homepage__callout" ref={(r) => { this.box4 = r; }}> 
-            <h1>Recipe ideas</h1>
-            <h2>Get expert cooking advice from the best chefs in the tri-state area</h2>
-            <p>
-            	<NavLink to="/recipes" className="btn" activeClassName="active">Find a great recipe</NavLink>
-            </p>
-          </section>
-        </Parallax>
+        <HomeBox 
+        	bgImage={personholdingsb2} 
+        	headline="The freshest ingredients"
+        	subhead="All of our products are of the highest quality"
+        	btnUrl="about"
+        	btnText="Read about our history"
+        	reference={(r) => { this.box3 = r; }}
+        />
+
+        <HomeBox 
+        	bgImage={cuttingboard}
+        	headline="Recipe ideas"
+        	subhead="Get expert cooking advice from the best chefs in the tri-state area"
+        	btnUrl="recipes"
+        	btnText="Find a great recipe"
+        	reference={(r) => { this.box4 = r; }}
+        />
 
       </main>
     );

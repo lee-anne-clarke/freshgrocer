@@ -292,19 +292,23 @@ hr {
 /*---------------------------------------------------
 	Homepage
 ---------------------------------------------------*/
+/*
 .homepage {
-  margin-left: -1px; }
-
-.homepage .react-parallax-content {
+  margin-left: -1px;
+}
+*/
+.homebox {
   min-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 2em;
   padding-left: 3em; }
   @media (min-width: 540px) {
-    .homepage .react-parallax-content {
+    .homebox {
       padding-top: 7em;
       padding-left: 5em; } }
 
-.homepage__callout {
+.homebox__inner {
   background-color: rgba(226, 243, 243, 0.85);
   max-width: 400px;
   padding: 3em; }
