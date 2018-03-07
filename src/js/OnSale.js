@@ -50,7 +50,7 @@ class OnSale extends Component {
 
             <div className="onsale-li">
               <div className="onsale-li-inner">
-                <img src={pumpkins} alt="" />
+                <img src={pumpkins} alt="pumpkins" />
                 <div className="onsale-li-innertext">
                   <h3>Vestibulum laoreet gravida pretium</h3>
                   <p>Ut purus nulla, hendrerit eget blandit sit amet 
@@ -61,7 +61,7 @@ class OnSale extends Component {
 
             <div className="onsale-li">
               <div className="onsale-li-inner">
-                <img src={pastries} alt="" />
+                <img src={pastries} alt="pastries" />
                 <div className="onsale-li-innertext">
                   <h3>Vestibulum laoreet gravida pretium</h3>
                   <p>Ut purus nulla, hendrerit eget blandit sit amet 
@@ -72,7 +72,7 @@ class OnSale extends Component {
 
             <div className="onsale-li">
               <div className="onsale-li-inner">
-                <img src={tomatoes} alt="" />
+                <img src={tomatoes} alt="tomatoes" />
                 <div className="onsale-li-innertext">
                   <h3>Vestibulum laoreet gravida pretium</h3>
                   <p>Ut purus nulla, hendrerit eget blandit sit amet 
@@ -83,7 +83,7 @@ class OnSale extends Component {
             
             <div className="onsale-li">
               <div className="onsale-li-inner">
-                <img src={fruitsveggies} alt="" />
+                <img src={fruitsveggies} alt="fruits and vegetables" />
                 <div className="onsale-li-innertext">
                   <h3>Vestibulum laoreet gravida pretium</h3>
                   <p>Ut purus nulla, hendrerit eget blandit sit amet 
@@ -94,7 +94,7 @@ class OnSale extends Component {
 
             <div className="onsale-li">
               <div className="onsale-li-inner">
-                <img src={strawberries} alt="" />
+                <img src={strawberries} alt="strawberries" />
                 <div className="onsale-li-innertext">
                   <h3>Vestibulum laoreet gravida pretium</h3>
                   <p>Ut purus nulla, hendrerit eget blandit sit amet 
@@ -105,7 +105,7 @@ class OnSale extends Component {
 
             <div className="onsale-li">
               <div className="onsale-li-inner">
-                <img src={pie2} alt="" />
+                <img src={pie2} alt="apple pie and apples on a table" />
                 <div className="onsale-li-innertext">
                   <h3>Vestibulum laoreet gravida pretium</h3>
                   <p>Ut purus nulla, hendrerit eget blandit sit amet 
@@ -116,7 +116,7 @@ class OnSale extends Component {
 
             <div className="onsale-li">
               <div className="onsale-li-inner">
-                <img src={apples} alt="" />
+                <img src={apples} alt="green apples" />
                 <div className="onsale-li-innertext">
                   <h3>Vestibulum laoreet gravida pretium</h3>
                   <p>Ut purus nulla, hendrerit eget blandit sit amet 
@@ -127,7 +127,7 @@ class OnSale extends Component {
 
             <div className="onsale-li">
               <div className="onsale-li-inner">
-                <img src={coffebeans} alt="" />
+                <img src={coffebeans} alt="coffe beans" />
                 <div className="onsale-li-innertext">
                   <h3>Vestibulum laoreet gravida pretium</h3>
                   <p>Ut purus nulla, hendrerit eget blandit sit amet 
@@ -138,7 +138,7 @@ class OnSale extends Component {
 
             <div className="onsale-li">
               <div className="onsale-li-inner">
-                <img src={cupcakes} alt="" />
+                <img src={cupcakes} alt="cupcakes" />
                 <div className="onsale-li-innertext">
                   <h3>Vestibulum laoreet gravida pretium</h3>
                   <p>Ut purus nulla, hendrerit eget blandit sit amet 
