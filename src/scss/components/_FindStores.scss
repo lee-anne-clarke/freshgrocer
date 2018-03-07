@@ -4,8 +4,8 @@
 
 .findstores-list {
   width: 100%;
-  padding-left: 1em;
-  margin: 3em auto 0;
+  padding-left: 1rem;
+  margin: 3rem auto 0;
   
   *, *:after, *:before {
     box-sizing: border-box;
@@ -19,17 +19,17 @@
 
 .findstores-li {
   list-style-type: none;
-  padding-left: 0.4em;
-  margin-bottom: 5em;
+  padding-left: 0.4rem;
+  margin-bottom: 5rem;
   border-left: 1px solid #53aa0e;
 
   &:before {
     font-family: FontAwesome;
     content: "\f041";
     position: absolute;
-    left: -0.65em;
+    left: -2.4rem;
     color: #53aa0e;
-    font-size: 50px;
+    font-size: 3rem;
     line-height: 0.8;
   }
 

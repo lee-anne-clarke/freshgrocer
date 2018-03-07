@@ -30,7 +30,7 @@ p,
 
 hr {
   border: none;
-  border-bottom: 0.2em solid #cff1e3; }
+  border-bottom: 0.2rem solid #cff1e3; }
 
 /*---------------------------------------------------
 	Buttons and Hyperlinks
@@ -44,7 +44,7 @@ hr {
     display: inline-block;
     color: black;
     text-decoration: none;
-    padding: 10px;
+    padding: 0.6rem;
     background-color: #cff1e3;
     transition: background-color 0.3s; }
   .btn:hover {
@@ -54,7 +54,7 @@ hr {
 .btn--submit, .btn--submit:active, .btn--submit:focus {
   border: none;
   box-shadow: none;
-  padding: 10px 30px; }
+  padding: 0.7rem 1.9rem; }
 
 /******* Navigation *******/
 .nav-list a {
@@ -62,7 +62,7 @@ hr {
   text-decoration: none; }
 
 .nav-list--mb a {
-  font-size: 1.4em;
+  font-size: 1.6rem;
   transition: color 0.3s; }
   .nav-list--mb a, .nav-list--mb a:focus {
     color: #6fa83c; }
@@ -71,9 +71,9 @@ hr {
 
 .nav-list--dt a {
   color: white;
-  font-size: 1.2em; }
+  font-size: 1.2rem; }
   .nav-list--dt a:hover, .nav-list--dt a.active {
-    border-bottom: 0.15em solid white; }
+    border-bottom: 0.15rem solid white; }
 
 /******* Footer *******/
 .footer__nav a {
@@ -81,11 +81,11 @@ hr {
   .footer__nav a, .footer__nav a:focus {
     color: #6fa83c; }
   .footer__nav a:hover {
-    border-bottom: 0.05em solid #6fa83c; }
+    border-bottom: 0.05rem solid #6fa83c; }
 
 .btn-backtotop {
   color: #6fa83c;
-  font-size: 4em;
+  font-size: 4rem;
   cursor: pointer;
   opacity: 0.6;
   transition: opacity .25s ease-in-out; }
@@ -96,7 +96,7 @@ hr {
 	Forms
 ---------------------------------------------------*/
 .form__group {
-  margin-bottom: 2em; }
+  margin-bottom: 2rem; }
   .form__group select {
     max-width: 100%; }
   .form__group textarea {
@@ -107,8 +107,8 @@ hr {
   display: block; }
 
 .form__input {
-  padding: 5px 10px;
-  border: 0.15em solid #ccc; }
+  padding: 0.5rem 0.8rem;
+  border: 0.15rem solid #ccc; }
   .form__input:focus {
     outline: none;
     border-color: #b8cce4; }
@@ -144,12 +144,12 @@ hr {
 
 .header-mobile,
 .nav-dt {
-  border-bottom: 0.5em solid #6fa83c; }
+  border-bottom: 0.5rem solid #6fa83c; }
 
 /******************* MOBILE *******************/
 .header-mobile {
   background-color: #a8d67f;
-  padding: 1.3em 1em 1em 6em; }
+  padding: 1.3rem 1rem 1rem 6rem; }
   .header-mobile img {
     width: 208px;
     max-width: 100%; }
@@ -182,8 +182,8 @@ hr {
 /* General sidebar styles */
 .bm-menu {
   background: #373a47;
-  font-size: 1.15em;
-  padding: 1em; }
+  font-size: 1.15rem;
+  padding: 2rem; }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
@@ -191,7 +191,7 @@ hr {
 
 /* Wrapper for item list */
 .bm-item-list {
-  padding: 0.8em; }
+  padding: 0.8rem; }
 
 /* Overlay */
 .bm-overlay {
@@ -208,7 +208,7 @@ hr {
   padding: 0;
   margin: 0; }
   .nav-list--mb li {
-    margin-bottom: 1em;
+    margin-bottom: 1.3rem;
     border-bottom: 1px solid #e8e8e8; }
 
 .header-mobile + div {
@@ -221,20 +221,20 @@ hr {
 
 .nav-dt {
   background-color: #a8d67f;
-  padding: 0.8em 1.5em 0.5em; }
+  padding: 0.8rem 1.5rem 0.5rem; }
   @media (max-width: 767px) {
     .nav-dt {
       display: none; } }
 
 .nav-list--dt {
-  padding: 1em 0 0.5em;
+  padding: 1rem 0 0.5rem;
   margin: 0; }
   .nav-list--dt li {
     display: inline-block;
-    margin-right: 2em; }
+    margin-right: 2rem; }
   @media (min-width: 992px) {
     .nav-list--dt {
-      padding: 0.2em 0 0.5em 2em; } }
+      padding: 0.2rem 0 0.5rem 2rem; } }
 
 /*************** MEDIA QUERIES ***************/
 @media (min-width: 768px) {
@@ -259,8 +259,8 @@ hr {
 	Variables and Mixins
 ---------------------------------------------------*/
 .footer {
-  padding: 1em;
-  border-top: 0.5em solid #6fa83c; }
+  padding: 1rem;
+  border-top: 0.5rem solid #6fa83c; }
 
 .footer__nav {
   float: left;
@@ -269,7 +269,7 @@ hr {
   list-style: none; }
   .footer__nav li {
     color: #b2b4b7;
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.5rem; }
 
 .footer__backtotop {
   float: right;
@@ -278,7 +278,7 @@ hr {
 @media (min-width: 600px) {
   .footer__nav li {
     display: inline-block;
-    margin-right: 1.2em; }
+    margin-right: 1.2rem; }
   .footer__nav,
   .footer__backtotop {
     float: none;
@@ -292,26 +292,20 @@ hr {
 /*---------------------------------------------------
 	Homepage
 ---------------------------------------------------*/
-/*
-.homepage {
-  margin-left: -1px;
-}
-*/
 .homebox {
-  min-height: 500px;
+  min-height: 31rem;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 2em;
-  padding-left: 3em; }
+  padding-top: 2rem; }
   @media (min-width: 540px) {
     .homebox {
-      padding-top: 7em;
-      padding-left: 5em; } }
+      padding-top: 7rem;
+      padding-left: 5rem; } }
 
 .homebox__inner {
   background-color: rgba(226, 243, 243, 0.85);
-  max-width: 400px;
-  padding: 3em; }
+  max-width: 25rem;
+  padding: 3rem; }
 
 /*---------------------------------------------------
 	Inner pages
@@ -320,7 +314,7 @@ hr {
 	Variables and Mixins
 ---------------------------------------------------*/
 .innerpage .react-parallax-content {
-  min-height: 300px; }
+  min-height: 19rem; }
 
 .innerpage__title {
   position: absolute;
@@ -329,7 +323,7 @@ hr {
   z-index: 9;
   background-color: rgba(226, 243, 243, 0.85); }
   .innerpage__title h1 {
-    padding: 0 1em; }
+    padding-left: 2rem; }
   @media (min-width: 768px) {
     .innerpage__title {
       bottom: 0; } }
@@ -339,8 +333,8 @@ hr {
 ---------------------------------------------------*/
 .findstores-list {
   width: 100%;
-  padding-left: 1em;
-  margin: 3em auto 0; }
+  padding-left: 1rem;
+  margin: 3rem auto 0; }
   .findstores-list *, .findstores-list *:after, .findstores-list *:before {
     box-sizing: border-box; }
   @media (min-width: 768px) {
@@ -349,16 +343,16 @@ hr {
 
 .findstores-li {
   list-style-type: none;
-  padding-left: 0.4em;
-  margin-bottom: 5em;
+  padding-left: 0.4rem;
+  margin-bottom: 5rem;
   border-left: 1px solid #53aa0e; }
   .findstores-li:before {
     font-family: FontAwesome;
     content: "\f041";
     position: absolute;
-    left: -0.65em;
+    left: -2.4rem;
     color: #53aa0e;
-    font-size: 50px;
+    font-size: 3rem;
     line-height: 0.8; }
   @media (min-width: 768px) {
     .findstores-li {
@@ -373,41 +367,37 @@ hr {
 ---------------------------------------------------*/
 .onsale-list {
   width: 100%;
-  margin: 3em auto 0; }
+  margin: 3rem auto 0; }
   .onsale-list *, .onsale-list *:after, .onsale-list *:before {
     box-sizing: border-box; }
-  @media (min-width: 768px) {
-    .onsale-list {
-      margin-right: -15px;
-      margin-left: -15px; } }
 
 .onsale-li {
-  margin: 0 0 5em; }
+  margin: 0 0 5rem; }
   .onsale-li img {
     max-width: 100%;
-    margin-bottom: -0.25em; }
+    margin-bottom: -0.25rem; }
   @media (min-width: 768px) {
     .onsale-li {
       float: left;
       width: 33%;
-      padding: 0 2em; } }
+      padding: 0 2rem; } }
 
 .onsale-li-inner {
-  border: 0.2em solid #cff1e3; }
+  border: 0.2rem solid #cff1e3; }
   .onsale-li-inner p {
     line-height: 1.4; }
 
 .onsale-li-innertext {
-  padding: 10px 10px 0;
-  border-top: 0.4em solid #cff1e3; }
+  padding: 1rem 1rem 0;
+  border-top: 0.4rem solid #cff1e3; }
   .onsale-li-innertext h3 {
     margin: 0; }
   .onsale-li-innertext p {
-    border-top: 0.2em solid #cff1e3; }
+    border-top: 0.2rem solid #cff1e3; }
 
 .onsale-deal {
   color: red;
-  padding-left: 0.6em; }
+  padding-left: 0.6rem; }
 
 /*---------------------------------------------------
   Recipes
@@ -419,28 +409,24 @@ hr {
   display: inline-block;
   max-width: 1080px;
   width: 100%;
-  margin: 3em auto 0; }
+  margin: 3rem auto 0; }
   .recipes-list *, .recipes-list *:after, .recipes-list *:before {
     box-sizing: border-box; }
-  @media (min-width: 1024px) {
-    .recipes-list {
-      margin-right: -15px;
-      margin-left: -15px; } }
 
 .recipes-li {
   text-align: left;
-  margin: 0 0 5em; }
+  margin: 0 0 5rem; }
   @media (min-width: 1024px) {
     .recipes-li {
       float: left;
       width: 33%;
-      padding: 0 2em; } }
+      padding: 0 2rem; } }
 
 .recipes-li-reveal {
   display: inline-block;
   color: black;
   text-decoration: none;
-  padding: 10px;
+  padding: 0.6rem;
   background-size: 100% 200%;
   background-image: linear-gradient(to bottom, #cff1e3 50%, #6fa83c 50%);
   transition: background-position 0.3s, color 0.3s; }
@@ -452,7 +438,7 @@ hr {
 
 .recipes-li-innertext {
   background-color: rgba(255, 255, 255, 0.93);
-  padding: 15px;
+  padding: 1.2rem;
   cursor: default; }
   .recipes-li-innertext h3 {
     margin: 0; }
@@ -478,13 +464,13 @@ hr {
 @media (min-width: 1024px) {
   .recipes-li-inner,
   .recipes-li-innertext {
-    min-height: 400px; } }
+    min-height: 16rem; } }
 
 /*---------------------------------------------------
 	Contact Us
 ---------------------------------------------------*/
 .contact {
-  margin-bottom: 2em; }
+  margin-bottom: 2rem; }
 
 .contact__validmsg,
 .contact__invalidmsg {
@@ -496,8 +482,8 @@ hr {
 .contact__invalidmsg {
   color: red;
   font-style: italic;
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 /*---------------------------------------------------
 	Utilities

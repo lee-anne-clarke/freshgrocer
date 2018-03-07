@@ -6,8 +6,8 @@
 
 
 .footer {
-	padding: 1em;
-  border-top: 0.5em solid $fgGreen;
+	padding: 1rem;
+  border-top: 0.5rem solid $fgGreen;
 }
 
 .footer__nav {
@@ -18,7 +18,7 @@
   
   li {
   	color: #b2b4b7;
-  	margin-bottom: 0.5em
+  	margin-bottom: 0.5rem
   }
 }
 
@@ -31,7 +31,7 @@
 @media (min-width: 600px) {
   .footer__nav li {
     display: inline-block;
-    margin-right: 1.2em;
+    margin-right: 1.2rem;
   }
   
   .footer__nav,

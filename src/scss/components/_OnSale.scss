@@ -7,30 +7,25 @@
 
 .onsale-list {
   @include listWrap;
-
-	@media (min-width: 768px) {
-    margin-right: -15px;
-    margin-left: -15px;
-  }
 }
 
 .onsale-li {
-  margin: 0 0 5em;
+  margin: 0 0 5rem;
 
   img {
     max-width: 100%;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.25rem;
   }
 
 	@media (min-width: 768px) {
     float: left;
     width: 33%;
-    padding: 0 2em;
+    padding: 0 2rem;
   }
 }
 
 .onsale-li-inner {
-  border: 0.2em solid $fgBlue;
+  border: 0.2rem solid $fgBlue;
   
   p {
   	line-height: 1.4;
@@ -38,19 +33,19 @@
 }
 
 .onsale-li-innertext {
-  padding: 10px 10px 0;
-  border-top: 0.4em solid $fgBlue;
+  padding: 1rem 1rem 0;
+  border-top: 0.4rem solid $fgBlue;
   
   h3 {
   	margin: 0
   }
   
   p {
-  	border-top: 0.2em solid $fgBlue;
+  	border-top: 0.2rem solid $fgBlue;
   }
 }
 
 .onsale-deal {
   color: red;
-  padding-left: 0.6em;
+  padding-left: 0.6rem;
 }
