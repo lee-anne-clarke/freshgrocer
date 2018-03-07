@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import { Parallax } from 'react-parallax'
 import { 
 	innerpTitleConfig, 
-	headerImgConfig,
-	mainSubheader,  
+	mainSubheaderConfig,  
 	listItemConfig } from './sr/srConfig'
 import sr from './sr/ScrollReveal'
 
@@ -16,8 +15,7 @@ class FindStores extends Component {
   componentDidMount = () => {
   	//Scroll Reveal
     sr.reveal(this.innerpTitle, innerpTitleConfig);
-    sr.reveal(this.headerImg, headerImgConfig);
-    sr.reveal(this.mainSubheader, mainSubheader);
+    sr.reveal(this.mainSubheader, mainSubheaderConfig);
     sr.reveal(this.listItem1, listItemConfig);
     sr.reveal(this.listItem2, listItemConfig);
     sr.reveal(this.listItem3, listItemConfig);
@@ -38,7 +36,7 @@ class FindStores extends Component {
 						<h1>Find A Store</h1>
 					</div>
 
-					<div ref={(r) => { this.headerImg = r; }}>
+					<div>
 						<Parallax bgImage={findStoresHeader} strength={300} />
 					</div>
 				</section>

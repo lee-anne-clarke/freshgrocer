@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Parallax } from 'react-parallax'
-import { innerpTitleConfig, headerImgConfig } from './sr/srConfig'
+import { innerpTitleConfig } from './sr/srConfig'
 import sr from './sr/ScrollReveal'
 
 //images
@@ -12,7 +12,6 @@ class ContactUs extends Component {
   componentDidMount = () => {
     //Scroll Reveal
     sr.reveal(this.innerpTitle, innerpTitleConfig);
-    sr.reveal(this.headerImg, headerImgConfig);
 
     //Contact form
     let contactForm = document.getElementById('contactForm');
@@ -44,7 +43,7 @@ class ContactUs extends Component {
             <h1>Contact Us</h1>
           </div>
 
-          <div ref={(r) => { this.headerImg = r; }}>
+          <div>
             <Parallax bgImage={contactHeader} strength={300} />
           </div>
         </section>

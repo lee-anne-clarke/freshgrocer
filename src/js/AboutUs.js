@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Parallax } from 'react-parallax'
-import { innerpTitleConfig, headerImgConfig } from './sr/srConfig'
+import { innerpTitleConfig } from './sr/srConfig'
 import sr from './sr/ScrollReveal'
 
 //images
@@ -15,7 +15,6 @@ class AboutUs extends Component {
   componentDidMount = () => {
   	//Scroll Reveal
     sr.reveal(this.innerpTitleAbout, innerpTitleConfig);
-    sr.reveal(this.headerImgAbout, headerImgConfig);
   }
 
 
@@ -28,7 +27,7 @@ class AboutUs extends Component {
             <h1>About Us</h1>
           </div>
 
-          <div ref={(r) => { this.headerImgAbout = r; }}>
+          <div>
             <Parallax bgImage={aboutHeader} strength={300} />
           </div>
         </section>

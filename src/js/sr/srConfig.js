@@ -7,16 +7,7 @@ const innerpTitleConfig = {
   easing: 'ease',
 }
 
-const headerImgConfig = {
-  origin: 'top',
-  duration: 900,
-  delay: 90,
-  distance: 0,
-  scale: 1,
-  easing: 'ease',
-}
-
-const mainSubheader = {
+const mainSubheaderConfig = {
   origin: 'top',
   duration: 1000,
   delay: 300,
@@ -34,7 +25,6 @@ const listItemConfig = {
 
 export { 
 	innerpTitleConfig, 
-	headerImgConfig, 
-	mainSubheader, 
+	mainSubheaderConfig, 
 	listItemConfig 
 }

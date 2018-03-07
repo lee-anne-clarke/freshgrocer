@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import { Parallax } from 'react-parallax'
 import { 
 	innerpTitleConfig, 
-	headerImgConfig,
-	mainSubheader } from './sr/srConfig'
+	mainSubheaderConfig } from './sr/srConfig'
 import sr from './sr/ScrollReveal'
 
 //images
@@ -51,8 +50,7 @@ class Recipes extends Component {
     }
 
 		sr.reveal(this.innerpTitle, innerpTitleConfig);
-    sr.reveal(this.headerImg, headerImgConfig);
-    sr.reveal(this.mainSubheader, mainSubheader);
+    sr.reveal(this.mainSubheader, mainSubheaderConfig);
     sr.reveal(this.listItem1, listItem1Config);
     sr.reveal(this.listItem2, listItem2Config);
     sr.reveal(this.listItem3, listItem3Config);
@@ -74,7 +72,7 @@ class Recipes extends Component {
             <h1>Recipes</h1>
           </div>
     
-          <div ref={(r) => { this.headerImg = r; }}>
+          <div>
             <Parallax bgImage={recipesHeader} strength={300} />
           </div>
         </section>

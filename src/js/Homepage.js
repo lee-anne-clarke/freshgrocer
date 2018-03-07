@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import HomeBox from './HomeBox'
+import HomeBox from './boxes/HomeBox'
 import sr from './sr/ScrollReveal'
 
 //images
