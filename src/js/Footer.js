@@ -10,7 +10,7 @@ class Footer extends Component {
 		scroll.scrollToTop();
 	}
 
-	render () {
+	render() {
 		return (
 		  <footer className="footer u-clearfix">
 		  	<ul className="footer__nav">

@@ -34,7 +34,7 @@ class ContactUs extends Component {
   }
 
 
-  render () {
+  render() {
     return (
       <main className="contact innerpage" id="page-wrap">
 

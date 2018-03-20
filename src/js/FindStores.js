@@ -27,7 +27,7 @@ class FindStores extends Component {
   }
 
 
-  render () {
+  render() {
     return (
 			<main className="innerpage" id="page-wrap">
 

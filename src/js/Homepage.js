@@ -38,7 +38,7 @@ class Homepage extends Component {
   }
 
 
-  render () {
+  render() {
     return (
       <main className="homepage" id="page-wrap">
 
