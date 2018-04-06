@@ -1,3 +1,3 @@
 ## freshgrocer
 
-Files for the mock Fresh Grocer redesign.
+Files for The Fresh Grocer, a mock redesign site.
