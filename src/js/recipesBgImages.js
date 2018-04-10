@@ -10,39 +10,39 @@ import grillImg from '../img/recipes/grill.jpg'
 import cookingstuff2Img from '../img/recipes/cookingstuff2.jpg'
 
 const recipe1Bg = {
-	backgroundImage: 'url(' + cookiesImg + ')',
+	backgroundImage: `url(${cookiesImg})`
 }
 
 const recipe2Bg = {
-	backgroundImage: 'url(' + cookingstuff1Img + ')',
+	backgroundImage: `url(${cookingstuff1Img})`
 }
 
 const recipe3Bg = {
-	backgroundImage: 'url(' + pieImg + ')',
+	backgroundImage: `url(${pieImg})`
 }
 
 const recipe4Bg = {
-	backgroundImage: 'url(' + ricebowlImg + ')',
+	backgroundImage: `url(${ricebowlImg})`
 }
 
 const recipe5Bg = {
-	backgroundImage: 'url(' + veggiesImg + ')',
+	backgroundImage: `url(${veggiesImg})`
 }
 
 const recipe6Bg = {
-	backgroundImage: 'url(' + platterImg + ')',
+	backgroundImage: `url(${platterImg})`
 }
 
 const recipe7Bg = {
-	backgroundImage: 'url(' + pastaImg + ')',
+	backgroundImage: `url(${pastaImg})`
 }
 
 const recipe8Bg = {
-	backgroundImage: 'url(' + grillImg + ')',
+	backgroundImage: `url(${grillImg})`
 }
 
 const recipe9Bg = {
-	backgroundImage: 'url(' + cookingstuff2Img + ')',
+	backgroundImage: `url(${cookingstuff2Img})`
 }
 
 export {
