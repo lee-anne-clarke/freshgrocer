@@ -99,12 +99,12 @@
 .nav-list--mb {
 	padding: 0;
 	margin: 0;
-  
-  li {
+}
+
+.nav-mb-item {
     margin-bottom: 1.3rem;
     border-bottom: 1px solid #e8e8e8;
   }
-}
 
 
 .header-mobile + div {
@@ -141,9 +141,6 @@
     padding: 0.2rem 0 0.5rem 2rem;
   }
 }
-
-
-/*************** MEDIA QUERIES ***************/
 
 @media (min-width: 768px) {
 	.header-mobile,

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Parallax } from 'react-parallax'
+import FGAddress from './FGAddress'
 import { 
 	innerpTitleConfig, 
 	mainSubheaderConfig,  
@@ -46,69 +47,37 @@ class FindStores extends Component {
 					<h2 ref={(r) => { this.mainSubheader = r; }}>Come visit us at one of the following locations:</h2>
 
 					<ul className="findstores-list u-clearfix">
-						<li className="findstores-li" ref={(r) => { this.listItem1 = r; }}>
-							<b>The Fresh Grocer #1</b><br /><br />
-							123 Avenue Lane<br />
-							Philadelphia, Pennsylvania 19122<br /><br />
-							Phone: (215) 555-5555<br /><br />
-							<a className="btn" href="#">Driving Directions</a>
-						</li>
+						<FGAddress 
+							reference={(r) => { this.listItem1 = r; }}
+						/>
 
-						<li className="findstores-li" ref={(r) => { this.listItem2 = r; }}>
-							<b>The Fresh Grocer #2</b><br /><br />
-							123 Avenue Lane<br />
-							Philadelphia, Pennsylvania 19122<br /><br />
-							Phone: (215) 555-5555<br /><br />
-							<a className="btn" href="#">Driving Directions</a>
-						</li>
+						<FGAddress 
+							reference={(r) => { this.listItem2 = r; }}
+						/>
 
-						<li className="findstores-li" ref={(r) => { this.listItem3 = r; }}>
-							<b>The Fresh Grocer #3</b><br /><br />
-							123 Avenue Lane<br />
-							Philadelphia, Pennsylvania 19122<br /><br />
-							Phone: (215) 555-5555<br /><br />
-							<a className="btn" href="#">Driving Directions</a>
-						</li>
+						<FGAddress 
+							reference={(r) => { this.listItem3 = r; }}
+						/>
 
-						<li className="findstores-li" ref={(r) => { this.listItem4 = r; }}>
-							<b>The Fresh Grocer #4</b><br /><br />
-							123 Avenue Lane<br />
-							Philadelphia, Pennsylvania 19122<br /><br />
-							Phone: (215) 555-5555<br /><br />
-							<a className="btn" href="#">Driving Directions</a>
-						</li>
+						<FGAddress 
+							reference={(r) => { this.listItem4 = r; }}
+						/>
 
-						<li className="findstores-li" ref={(r) => { this.listItem5 = r; }}>
-							<b>The Fresh Grocer #5</b><br /><br />
-							123 Avenue Lane<br />
-							Philadelphia, Pennsylvania 19122<br /><br />
-							Phone: (215) 555-5555<br /><br />
-							<a className="btn" href="#">Driving Directions</a>
-						</li>
+						<FGAddress 
+							reference={(r) => { this.listItem5 = r; }}
+						/>
 
-						<li className="findstores-li" ref={(r) => { this.listItem6 = r; }}>
-							<b>The Fresh Grocer #6</b><br /><br />
-							123 Avenue Lane<br />
-							Philadelphia, Pennsylvania 19122<br /><br />
-							Phone: (215) 555-5555<br /><br />
-							<a className="btn" href="#">Driving Directions</a>
-						</li>
+						<FGAddress 
+							reference={(r) => { this.listItem6 = r; }}
+						/>
 
-						<li className="findstores-li" ref={(r) => { this.listItem7 = r; }}>
-							<b>The Fresh Grocer #7</b><br /><br />
-							123 Avenue Lane<br />
-							Philadelphia, Pennsylvania 19122<br /><br />
-							Phone: (215) 555-5555<br /><br />
-							<a className="btn" href="#">Driving Directions</a>
-						</li>
+						<FGAddress 
+							reference={(r) => { this.listItem7 = r; }}
+						/>
 
-						<li className="findstores-li" ref={(r) => { this.listItem8 = r; }}>
-							<b>The Fresh Grocer #8</b><br /><br />
-							123 Avenue Lane<br />
-							Philadelphia, Pennsylvania 19122<br /><br />
-							Phone: (215) 555-5555<br /><br />
-							<a className="btn" href="#">Driving Directions</a>
-						</li>
+						<FGAddress 
+							reference={(r) => { this.listItem8 = r; }}
+						/>
 					</ul>
 
 				</section>
