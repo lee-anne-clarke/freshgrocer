@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Scroll from 'react-scroll'
 
-//Necessary for React Scroll package
+//Necessary for React Scroll
 const scroll = Scroll.animateScroll;
 
 
@@ -21,7 +21,9 @@ class Footer extends Component {
 		  	</ul>
 
 		  	<div className="footer__backtotop">
-		  		<i className="fa fa-chevron-circle-up btn-backtotop" onClick={this.scrollToTop}></i>
+		  		<button className="btn-backtotop" type="button" onClick={this.scrollToTop}>
+		  			<i className="fa fa-chevron-circle-up"></i>
+		  		</button>
 		  	</div>
 		  </footer>
 		);

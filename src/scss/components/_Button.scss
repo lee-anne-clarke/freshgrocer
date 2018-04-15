@@ -8,7 +8,9 @@
 .btn {
   text-transform: uppercase;
   
-  &, &:active, &:focus {
+  &, 
+  &:active, 
+  &:focus {
     @include linkEffects;
     @include buttonStyle;
   }
@@ -76,12 +78,13 @@
 	}
 }
 
-
 .btn-backtotop {
+  opacity: 0.6;
+  background: none;
+  border: none;
   color: $fgGreen;
   font-size: 4rem;
   cursor: pointer;
-  opacity: 0.6;
   @include transitionOpacity;
   
   &:hover {
