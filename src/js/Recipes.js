@@ -24,6 +24,8 @@ import {
 class Recipes extends Component {
 
   componentDidMount = () => {
+  	document.title = "Recipes | The Fresh Grocer"
+
  		//Scroll Reveal
     const listItem1Config = {
       origin: 'top',

@@ -10,6 +10,8 @@ import contactHeader from '../img/contactus/pie1.jpg'
 class ContactUs extends Component {
   
   componentDidMount = () => {
+  	document.title = "Contact Us | The Fresh Grocer"
+
     //Scroll Reveal
     sr.reveal(this.innerpTitle, innerpTitleConfig);
 

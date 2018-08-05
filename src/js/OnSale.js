@@ -21,6 +21,8 @@ import cupcakes from '../img/onsale/cupcakes.jpg'
 class OnSale extends Component {
 
   componentDidMount = () => {
+  	document.title = "Items On Sale | The Fresh Grocer"
+
   	//Scroll Reveal
 
     sr.reveal(this.innerpTitle, innerpTitleConfig);
