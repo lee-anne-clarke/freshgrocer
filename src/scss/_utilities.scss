@@ -23,3 +23,24 @@
 .u-text-center {
 	text-align: center;
 }
+
+.u-no-overflow {
+	overflow: hidden;
+	position: fixed;
+}
+
+.u-no-overflow-mb {
+	@media (max-width: 767px) {
+		overflow: hidden;
+		position: fixed;
+	}
+}
+
+// Text for screen readers 
+.u-sr {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+}

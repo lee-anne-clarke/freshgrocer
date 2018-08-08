@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import uuid from 'uuid'
+// let Menu = require('react-burger-menu').push;
+import { slide as Menu } from 'react-burger-menu'
 
-// images
-import fglogo from '../../img/fglogo.png'
 
-
-class NavDt extends Component {
+class NavMobile extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -44,23 +43,24 @@ class NavDt extends Component {
 		const { navItems } = this.state
 
 		return (
-	    <nav className="nav-dt">
-	      <header className="header-dt">
-	        <Link to="/"><img src={fglogo} alt="The Fresh Grocer logo" /></Link>
-	      </header>
-
-	      <ul className="nav-list nav-list--dt">
+			<Menu 
+				id={ "navMobileMenuWrap" } 
+				pageWrapId={ "page-wrap" } 
+				outerContainerId={ "outer-container" } 
+				bodyClassName={ "u-no-overflow-mb" } 
+				isOpen={ false }>
+				
+		    <ul className="nav-list nav-list--mb">
 	      	{navItems.map(({ id, url, btnText }) => (
-	      		<li key={id}>
-	      			<NavLink to={`/${url}`} activeClassName="active">{btnText}</NavLink>
+	      		<li className="nav-item-mb" key={id}>
+	      			<NavLink to={`/${url}`}>{btnText}</NavLink>
 	      		</li>
 	      	))}
-	      </ul>
-	    </nav>
+		    </ul>
+	    </Menu>
 		);
 	}
 }
 
-
-export default NavDt
+export default NavMobile
 

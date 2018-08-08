@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import uuid from 'uuid'
-let Menu = require('react-burger-menu').push;
+
+// images
+import fglogo from '../img/fglogo.png'
 
 
-class NavMobile extends Component {
+class HeaderDt extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,23 +44,25 @@ class NavMobile extends Component {
 		const { navItems } = this.state
 
 		return (
-			<Menu 
-				id={ "navMobileMenuWrap" } 
-				pageWrapId={ "page-wrap" } 
-				outerContainerId={ "outer-container" } 
-				isOpen={ false }>
-				
-		    <ul className="nav-list nav-list--mb">
+	    <div className="header-dt-wrap">
+	      <header className="header-dt">
+	        <Link to="/">
+	        	<img className="header-img header-img--dt" src={fglogo} alt="The Fresh Grocer logo" />
+	        </Link>
+	      </header>
+
+	      <ul className="nav-list nav-list--dt">
 	      	{navItems.map(({ id, url, btnText }) => (
-	      		<li className="nav-mb-item" key={id}>
-	      			<NavLink to={`/${url}`} activeClassName="active">{btnText}</NavLink>
+	      		<li className="nav-item-dt" key={id}>
+	      			<NavLink to={`/${url}`}>{btnText}</NavLink>
 	      		</li>
 	      	))}
-		    </ul>
-	    </Menu>
+	      </ul>
+	    </div>
 		);
 	}
 }
 
-export default NavMobile
+
+export default HeaderDt
 
