@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import MainPage from './MainPage'
-import { Parallax } from 'react-parallax'
 import { 
 	mainHeaderImgConfig,
 	innerpTitleConfig 
