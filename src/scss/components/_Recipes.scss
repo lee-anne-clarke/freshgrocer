@@ -5,13 +5,13 @@
 @import '../_variables';
 
 
-.recipes-list {
+.recipes-wrap {
   display: inline-block;
   max-width: 1080px;
   @include listWrap;
 }
 
-.recipes-li {
+.recipe {
 	text-align: left;
   margin: 0 0 5rem;
 
@@ -22,7 +22,7 @@
   }
 }
 
-.recipes-li-reveal {
+.recipe-reveal {
   @include linkEffects;
   background-size: 100% 200%;
   background-image: linear-gradient(to bottom, $fgBlue 50%, $fgGreen 50%);
@@ -33,11 +33,11 @@
   }
 }
 
-.recipes-li-inner {
+.recipe-inner {
 	background-size: cover;
 }
 
-.recipes-li-innertext {
+.recipe-innertext {
   background-color: rgba(255,255,255,0.93);
   padding: 1.2rem;
   cursor: default;
@@ -47,29 +47,24 @@
   } 
 }
 
-.recipes-li-links {
+.recipe-links {
   opacity: 0;
   @include transitionOpacity;
 }
 
-
-.recipes-li-reveal:hover {
-  .recipes-li-innertext {
+.recipe-reveal:hover {
+  .recipe-innertext {
     background-color: rgba(226,243,243,0.93);
   }
   
-  .recipes-li-links {
+  .recipe-links {
     opacity: 1;
   }
 }
 
-
-/*************** MEDIA QUERIES ***************/
-
-@media (min-width: 1024px) {
-  .recipes-li-inner,
-  .recipes-li-innertext  {
-    min-height: 16rem;
-  }
+.recipe-inner,
+.recipe-innertext  {
+	@media (min-width: 1024px) {
+  	min-height: 16rem;
+	}
 }
-

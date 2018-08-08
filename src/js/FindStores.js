@@ -13,6 +13,7 @@ import findStoresHeader from '../img/storefront.jpg'
 
 
 class FindStores extends Component {
+	
   componentDidMount = () => {
   	document.title = "Find A Store | The Fresh Grocer"
 

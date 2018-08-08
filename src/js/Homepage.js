@@ -47,7 +47,7 @@ class Homepage extends Component {
         <HomeBox 
         	bgImage={grapefruit1} 
         	headline="Welcome to The Fresh Grocer"
-        	subhead="Your friendly neighborhood grocery store"
+        	subheadline="Your friendly neighborhood grocery store"
         	btnUrl="findstores"
         	btnText="Find a store near you" 
         	reference={(r) => { this.box1 = r; }}
@@ -56,7 +56,7 @@ class Homepage extends Component {
         <HomeBox 
         	bgImage={pumpkins2}
         	headline="Get ready for Fall"
-        	subhead="Find the best ingredients for your holiday meals"
+        	subheadline="Find the best ingredients for your holiday meals"
         	btnUrl="onsale"
         	btnText="Check out the latest deals"
         	reference={(r) => { this.box2 = r; }}
@@ -65,7 +65,7 @@ class Homepage extends Component {
         <HomeBox 
         	bgImage={personholdingsb2} 
         	headline="The freshest ingredients"
-        	subhead="All of our products are of the highest quality"
+        	subheadline="All of our products are of the highest quality"
         	btnUrl="about"
         	btnText="Read about our history"
         	reference={(r) => { this.box3 = r; }}
@@ -74,7 +74,7 @@ class Homepage extends Component {
         <HomeBox 
         	bgImage={cuttingboard}
         	headline="Recipe ideas"
-        	subhead="Get expert cooking advice from the best chefs in the tri-state area"
+        	subheadline="Get expert cooking advice from the best chefs in the tri-state area"
         	btnUrl="recipes"
         	btnText="Find a great recipe"
         	reference={(r) => { this.box4 = r; }}

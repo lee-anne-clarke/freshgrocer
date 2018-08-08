@@ -7,6 +7,7 @@ import fglogo from '../img/fglogo.png'
 
 
 class HeaderDt extends Component {
+	
   constructor(props) {
     super(props);
     this.state = {

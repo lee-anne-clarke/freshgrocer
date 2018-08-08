@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import MainPage from './MainPage'
+import RecipeBox from './boxes/RecipeBox'
 import { 
 	mainHeaderImgConfig, 
 	innerpTitleConfig, 
@@ -76,179 +77,55 @@ class Recipes extends Component {
 				<section className="container">
 					<h2 className="u-text-left" ref={(r) => { this.mainSubheader = r; }}>Check out the latest recipes:</h2>
 
-	        <div className="recipes-list u-clearfix">
-	          
-	          <figure className="recipes-li" ref={(r) => { this.listItem1 = r; }}>
-	            <div className="recipes-li-reveal">
-	              <figcaption className="recipes-li-inner" style={recipe1Bg}>
-	                <div className="recipes-li-innertext">
-	                  <h3>Proin at laoreet turpis</h3>
-	                  <p>Etiam gravida, ipsum at tempor finibus, purus nulla sodales elit, quis ultrices mauris quam et ex. Quisque et ornare ex. Aliquam tristique orci a dignissim tristique. Nullam elementum...</p>
-	                  
-	                  <div className="recipes-li-links">
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-tasks"></i> View the recipe</a></p>
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-envelope-o"></i> Send to a friend</a></p>
-	                  </div>
+	        <div className="recipes-wrap u-clearfix">
 
-	                </div>
-	              </figcaption>
-	            </div>
-	          </figure>
-	          
-	          
-	          
-	          <figure className="recipes-li" ref={(r) => { this.listItem2 = r; }}>
-	            <div className="recipes-li-reveal">
-	              <figcaption className="recipes-li-inner" style={recipe2Bg}>
-	                <div className="recipes-li-innertext">
-	                  <h3>Proin at laoreet turpis</h3>
-	                  <p>Etiam gravida, ipsum at tempor finibus, purus nulla sodales elit, quis ultrices mauris quam et ex. Quisque et ornare ex. Aliquam tristique orci a dignissim tristique. Nullam elementum...</p>
-	                  
-	                  <div className="recipes-li-links">
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-tasks"></i> View the recipe</a></p>
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-envelope-o"></i> Send to a friend</a></p>
-	                  </div>
-	  
-	                </div>
-	              </figcaption>
-	            </div>
-	          </figure>
-	          
-	          
-	          
-	          <figure className="recipes-li" ref={(r) => { this.listItem3 = r; }}>
-	            <div className="recipes-li-reveal">
-	              <figcaption className="recipes-li-inner" style={recipe3Bg}>
-	                <div className="recipes-li-innertext">
-	                  <h3>Proin at laoreet turpis</h3>
-	                  <p>Etiam gravida, ipsum at tempor finibus, purus nulla sodales elit, quis ultrices mauris quam et ex. Quisque et ornare ex. Aliquam tristique orci a dignissim tristique. Nullam elementum...</p>
-	                  
-	                  <div className="recipes-li-links">
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-tasks"></i> View the recipe</a></p>
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-envelope-o"></i> Send to a friend</a></p>
-	                  </div>
-	  
-	                </div>
-	              </figcaption>
-	            </div>
-	          </figure>
-	          
-	          
-	          
-	          <figure className="recipes-li" ref={(r) => { this.listItem4 = r; }}>
-	            <div className="recipes-li-reveal">
-	              <figcaption className="recipes-li-inner" style={recipe4Bg}>
-	                <div className="recipes-li-innertext">
-	                  <h3>Proin at laoreet turpis</h3>
-	                  <p>Etiam gravida, ipsum at tempor finibus, purus nulla sodales elit, quis ultrices mauris quam et ex. Quisque et ornare ex. Aliquam tristique orci a dignissim tristique. Nullam elementum...</p>
-	                  
-	                  <div className="recipes-li-links">
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-tasks"></i> View the recipe</a></p>
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-envelope-o"></i> Send to a friend</a></p>
-	                  </div>
-	  
-	                </div>
-	              </figcaption>
-	            </div>
-	          </figure>
-	          
-	          
-	          
-	          <figure className="recipes-li" ref={(r) => { this.listItem5 = r; }}>
-	            <div className="recipes-li-reveal">
-	              <figcaption className="recipes-li-inner" style={recipe5Bg}>
-	                <div className="recipes-li-innertext">
-	                  <h3>Proin at laoreet turpis</h3>
-	                  <p>Etiam gravida, ipsum at tempor finibus, purus nulla sodales elit, quis ultrices mauris quam et ex. Quisque et ornare ex. Aliquam tristique orci a dignissim tristique. Nullam elementum...</p>
-	                  
-	                  <div className="recipes-li-links">
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-tasks"></i> View the recipe</a></p>
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-envelope-o"></i> Send to a friend</a></p>
-	                  </div>
-	  
-	                </div>
-	              </figcaption>
-	            </div>
-	          </figure>
-	          
-	          
-	          
-	          <figure className="recipes-li" ref={(r) => { this.listItem6 = r; }}>
-	            <div className="recipes-li-reveal">
-	              <figcaption className="recipes-li-inner" style={recipe6Bg}>
-	                <div className="recipes-li-innertext">
-	                  <h3>Proin at laoreet turpis</h3>
-	                  <p>Etiam gravida, ipsum at tempor finibus, purus nulla sodales elit, quis ultrices mauris quam et ex. Quisque et ornare ex. Aliquam tristique orci a dignissim tristique. Nullam elementum...</p>
-	                  
-	                  <div className="recipes-li-links">
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-tasks"></i> View the recipe</a></p>
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-envelope-o"></i> Send to a friend</a></p>
-	                  </div>
-	  
-	                </div>
-	              </figcaption>
-	            </div>
-	          </figure>
-	          
-	          
-	          
-	          <figure className="recipes-li" ref={(r) => { this.listItem7 = r; }}>
-	            <div className="recipes-li-reveal">
-	              <figcaption className="recipes-li-inner" style={recipe7Bg}>
-	                <div className="recipes-li-innertext">
-	                  <h3>Proin at laoreet turpis</h3>
-	                  <p>Etiam gravida, ipsum at tempor finibus, purus nulla sodales elit, quis ultrices mauris quam et ex. Quisque et ornare ex. Aliquam tristique orci a dignissim tristique. Nullam elementum...</p>
-	                  
-	                  <div className="recipes-li-links">
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-tasks"></i> View the recipe</a></p>
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-envelope-o"></i> Send to a friend</a></p>
-	                  </div>
-	  
-	                </div>
-	              </figcaption>
-	            </div>
-	          </figure>
-	          
-	          
-	          
-	          <figure className="recipes-li" ref={(r) => { this.listItem8 = r; }}>
-	            <div className="recipes-li-reveal">
-	              <figcaption className="recipes-li-inner" style={recipe8Bg}>
-	                <div className="recipes-li-innertext">
-	                  <h3>Proin at laoreet turpis</h3>
-	                  <p>Etiam gravida, ipsum at tempor finibus, purus nulla sodales elit, quis ultrices mauris quam et ex. Quisque et ornare ex. Aliquam tristique orci a dignissim tristique. Nullam elementum...</p>
-	                  
-	                  <div className="recipes-li-links">
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-tasks"></i> View the recipe</a></p>
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-envelope-o"></i> Send to a friend</a></p>
-	                  </div>
-	  
-	                </div>
-	              </figcaption>
-	            </div>
-	          </figure>
-	          
-	          
-	          
-	          <figure className="recipes-li" ref={(r) => { this.listItem9 = r; }}>
-	            <div className="recipes-li-reveal">
-	              <figcaption className="recipes-li-inner" style={recipe9Bg}>
-	                <div className="recipes-li-innertext">
-	                  <h3>Proin at laoreet turpis</h3>
-	                  <p>Etiam gravida, ipsum at tempor finibus, purus nulla sodales elit, quis ultrices mauris quam et ex. Quisque et ornare ex. Aliquam tristique orci a dignissim tristique. Nullam elementum...</p>
-	                  
-	                  <div className="recipes-li-links">
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-tasks"></i> View the recipe</a></p>
-	                    <p><a className="btn-recipe" href="#"><i className="fa fa-envelope-o"></i> Send to a friend</a></p>
-	                  </div>
-	  
-	                </div>
-	              </figcaption>
-	            </div>
-	          </figure>
-	          
-	          
+	        	<RecipeBox 
+	        		reference={(r) => { this.listItem1 = r; }} 
+	        		bgImage={recipe1Bg}
+	        	/>
+
+	        	<RecipeBox 
+	        		reference={(r) => { this.listItem2 = r; }} 
+	        		bgImage={recipe2Bg}
+	        	/>
+
+	        	<RecipeBox 
+	        		reference={(r) => { this.listItem3 = r; }} 
+	        		bgImage={recipe3Bg}
+	        	/>
+
+	        	<RecipeBox 
+	        		reference={(r) => { this.listItem4 = r; }} 
+	        		bgImage={recipe4Bg}
+	        	/>
+
+	        	<RecipeBox 
+	        		reference={(r) => { this.listItem5 = r; }} 
+	        		bgImage={recipe5Bg}
+	        	/>
+
+	        	<RecipeBox 
+	        		reference={(r) => { this.listItem6 = r; }} 
+	        		bgImage={recipe6Bg}
+	        	/>
+
+	        	<RecipeBox 
+	        		reference={(r) => { this.listItem7 = r; }} 
+	        		bgImage={recipe7Bg}
+	        	/>
+
+	        	<RecipeBox 
+	        		reference={(r) => { this.listItem8 = r; }} 
+	        		bgImage={recipe8Bg}
+	        	/>
+
+	        	<RecipeBox 
+	        		reference={(r) => { this.listItem9 = r; }} 
+	        		bgImage={recipe9Bg}
+	        	/>
+
 	        </div>
+
 	      </section>
 					
 			</MainPage>

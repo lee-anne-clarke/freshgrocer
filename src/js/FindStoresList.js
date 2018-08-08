@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 
 class FindStoresList extends Component {
+	
 	componentDidMount() {
   	for (let i = 1; i < 9; i++) {
   		let fsList = document.getElementById("fsList")
