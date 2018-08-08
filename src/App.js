@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { HashRouter as Router, Route } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import ScrollToTop from './js/ScrollToTop'
 import MobileHeader from './js/MobileHeader'
 import NavMobile from './js/nav/NavMobile'
@@ -11,6 +11,7 @@ import OnSale from './js/OnSale'
 import Recipes from './js/Recipes'
 import ContactUs from './js/ContactUs'
 import Footer from './js/Footer'
+import ErrorPage from './js/ErrorPage'
 import './normalize.min.css'
 import './animate.min.css'
 import './App.css'
@@ -26,12 +27,15 @@ class App extends Component {
 		        <NavMobile />
 		        <NavDt />
 		        
-				    <Route exact path="/" component={Homepage} />
-				    <Route path="/about" component={AboutUs} />
-				    <Route path="/findstores" component={FindStores} />
-						<Route path="/onsale" component={OnSale} />
-						<Route path="/recipes" component={Recipes} />
-				    <Route path="/contact" component={ContactUs} />
+		        <Switch>
+					    <Route exact path="/" component={Homepage} />
+					    <Route path="/about" component={AboutUs} />
+					    <Route path="/findstores" component={FindStores} />
+							<Route path="/onsale" component={OnSale} />
+							<Route path="/recipes" component={Recipes} />
+					    <Route path="/contact" component={ContactUs} />
+					    <Route component={ErrorPage} />
+				    </Switch>
 
 				    <Footer />
 		      </div>

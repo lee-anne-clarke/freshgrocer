@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
+import MainPage from './MainPage'
 import { Parallax } from 'react-parallax'
-import { innerpTitleConfig } from './sr/srConfig'
+import { 
+	mainHeaderImgConfig,
+	innerpTitleConfig 
+} from './sr/srConfig'
 import sr from './sr/ScrollReveal'
 
 //images
@@ -13,6 +17,7 @@ class ContactUs extends Component {
   	document.title = "Contact Us | The Fresh Grocer"
 
     //Scroll Reveal
+    sr.reveal(this.mainHeaderImg, mainHeaderImgConfig);
     sr.reveal(this.innerpTitle, innerpTitleConfig);
 
     //Contact form
@@ -38,28 +43,19 @@ class ContactUs extends Component {
 
   render() {
     return (
-      <main className="contact innerpage" id="page-wrap">
+			<MainPage
+				title="Contact Us" 
+				paraBgImg={contactHeader}>
 
-        <section className="u-relative"> 
-          <div className="innerpage__title" ref={(r) => { this.innerpTitle = r; }}>
-            <h1>Contact Us</h1>
-          </div>
-
-          <div>
-            <Parallax bgImage={contactHeader} strength={300} />
-          </div>
-        </section>
-
-
-        <section className="container">
-          <h3>Call</h3>
+        <div className="container">
+        	<h2>Call</h2>
           <p><b>1-800-746-7748</b><br />
           Monday - Friday 8am-6pm<br />
           Saturday & Sunday 9am-5pm</p>
 
           <hr />
 
-          <h3>Write</h3>
+          <h2>Write</h2>
           <p>The Fresh Grocer c/o<br />
           ShopRite Customer Care<br />
           PO Box 7812<br />
@@ -67,7 +63,7 @@ class ContactUs extends Component {
 
           <hr />
 
-          <h3>Send A Message</h3>
+          <h2>Send A Message</h2>
 
           <form className="form" id="contactForm">
 		        <div className="form__group">
@@ -110,11 +106,12 @@ class ContactUs extends Component {
           </form>
 
           <div className="contact__validmsg" id="formValidMsg">
-						<h3>Thank you! We will get back to you as soon as we can.</h3>
+						<h2>Thank you! We will get back to you as soon as we can.</h2>
           </div>
 
-        </section> {/* end of .container */}
-      </main>
+        </div>
+					
+			</MainPage>
     );
   }
 }

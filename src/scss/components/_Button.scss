@@ -21,6 +21,17 @@
   }
 }
 
+.btn-recipe {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+
+	&:hover {
+		border-bottom: 1px solid black;
+	}
+}
+
 .btn--submit {
 	&, &:active, &:focus {
 	  border: none;

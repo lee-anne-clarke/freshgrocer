@@ -13,11 +13,6 @@ class NavDt extends Component {
       navItems: [
 			{ 
 				id: uuid(), 
-				url: 'about',
-				btnText: 'About Us' 
-			},
-			{ 
-				id: uuid(), 
 				url: 'findstores',
 				btnText: 'Find A Store' 
 			},
@@ -30,6 +25,11 @@ class NavDt extends Component {
 				id: uuid(), 
 				url: 'recipes',
 				btnText: 'Recipes' 
+			},
+			{ 
+				id: uuid(), 
+				url: 'about',
+				btnText: 'About Us' 
 			},
 			{ 
 				id: uuid(), 

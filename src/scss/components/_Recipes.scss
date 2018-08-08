@@ -50,17 +50,6 @@
 .recipes-li-links {
   opacity: 0;
   @include transitionOpacity;
-  
-  a {
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    
-    &:hover {
-    	border-bottom: 1px solid black;
-    }
-  }
 }
 
 

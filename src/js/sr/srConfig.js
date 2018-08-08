@@ -1,3 +1,12 @@
+const mainHeaderImgConfig = {
+  origin: 'top',
+  duration: 900,
+  delay: 0,
+  distance: 0,
+  scale: 1,
+  easing: 'ease',
+}
+
 const innerpTitleConfig = {
   origin: 'top',
   duration: 900,
@@ -24,6 +33,7 @@ const listItemConfig = {
 }
 
 export { 
+	mainHeaderImgConfig,
 	innerpTitleConfig, 
 	mainSubheaderConfig, 
 	listItemConfig 

@@ -18,6 +18,7 @@
 
 
 .findstores-li {
+	position: relative;
   list-style-type: none;
   padding-left: 0.4rem;
   margin-bottom: 5rem;
@@ -27,14 +28,14 @@
     font-family: FontAwesome;
     content: "\f041";
     position: absolute;
-    left: -2.4rem;
+   	left: -2.5rem;
     color: #53aa0e;
     font-size: 3rem;
     line-height: 0.8;
   }
 
 	@media (min-width: 768px) {
-	  float: left;
+	  display: inline-block;
 	  width: 50%;
 	}
 }

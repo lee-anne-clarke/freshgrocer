@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
+import MainPage from './MainPage'
 import { Parallax } from 'react-parallax'
-import { innerpTitleConfig } from './sr/srConfig'
+import { 
+	mainHeaderImgConfig,
+	innerpTitleConfig 
+} from './sr/srConfig'
 import sr from './sr/ScrollReveal'
 
 //images
@@ -16,24 +20,16 @@ class AboutUs extends Component {
   	document.title = "About Our Company | The Fresh Grocer"
 
   	//Scroll Reveal
-    sr.reveal(this.innerpTitleAbout, innerpTitleConfig);
+    sr.reveal(this.mainHeaderImg, mainHeaderImgConfig);
+    sr.reveal(this.innerpTitle, innerpTitleConfig);
   }
 
 
   render() {
     return (
-      <main className="innerpage" id="page-wrap">
-
-        <section className="u-relative"> 
-          <div className="innerpage__title" ref={(r) => { this.innerpTitleAbout = r; }}>
-            <h1>About Us</h1>
-          </div>
-
-          <div>
-            <Parallax bgImage={aboutHeader} strength={300} />
-          </div>
-        </section>
-
+			<MainPage
+				title="About Us" 
+				paraBgImg={aboutHeader}>
 
         <section className="container">
           <p>Ut purus nulla, hendrerit eget blandit sit amet, suscipit ut odio. Morbi venenatis cursus turpis, non egestas ante porta vitae. Aenean non lectus cursus odio ullamcorper mollis ut id nibh. Praesent velit mi, sodales eu viverra et, convallis maximus quam. Vivamus erat mauris, posuere a mauris interdum, congue mattis turpis. Sed molestie lacinia justo eu scelerisque. Proin consequat fringilla tortor, quis sagittis massa consectetur ac. </p>
@@ -74,7 +70,8 @@ class AboutUs extends Component {
 
           <p>Nam tempor, augue eu pellentesque aliquam, nisi elit molestie purus, at tempor urna ligula nec augue. Vivamus vulputate auctor malesuada. Suspendisse dignissim eros nec bibendum ornare. Phasellus in lacinia ante. Nulla facilisi. Donec vitae justo sed est suscipit lacinia. Morbi laoreet sem in arcu efficitur, quis tristique est euismod. Phasellus molestie quam sit amet urna posuere rutrum. Proin mattis scelerisque quam, eu mattis diam vulputate at. Sed orci dolor, lacinia molestie bibendum nec, aliquam nec lorem. Maecenas porttitor velit vel imperdiet hendrerit. Suspendisse est ipsum, cursus nec euismod non, varius non turpis. Ut malesuada, libero at tristique condimentum, elit nunc vestibulum orci, eget iaculis tellus eros vel enim. Nullam id facilisis tortor. Cras tristique nisl eget sapien consectetur vulputate. </p>
         </section>
-      </main>
+					
+			</MainPage>
     );
   }
 }

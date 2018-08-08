@@ -5,17 +5,12 @@
 @import '../_variables';
 
 
-.onsale-list {
+.onsale-items {
   @include listWrap;
 }
 
-.onsale-li {
+.onsale-item {
   margin: 0 0 5rem;
-
-  img {
-    max-width: 100%;
-    margin-bottom: -0.25rem;
-  }
 
 	@media (min-width: 768px) {
     float: left;
@@ -24,7 +19,12 @@
   }
 }
 
-.onsale-li-inner {
+.onsale-item-img {
+  max-width: 100%;
+  margin-bottom: -0.25rem;
+}
+
+.onsale-item-inner {
   border: 0.2rem solid $fgBlue;
   
   p {
@@ -32,7 +32,7 @@
   }
 }
 
-.onsale-li-innertext {
+.onsale-item-innertext {
   padding: 1rem 1rem 0;
   border-top: 0.4rem solid $fgBlue;
   
