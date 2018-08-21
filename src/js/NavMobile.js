@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import uuid from 'uuid'
-// let Menu = require('react-burger-menu').push;
 import { slide as Menu } from 'react-burger-menu'
 
 
