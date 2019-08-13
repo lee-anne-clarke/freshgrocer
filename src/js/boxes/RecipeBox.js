@@ -11,8 +11,8 @@ function RecipeBox(props) {
 	          <p>Etiam gravida, ipsum at tempor finibus, purus nulla sodales elit, quis ultrices mauris quam et ex. Quisque et ornare ex. Aliquam tristique orci a dignissim tristique. Nullam elementum...</p>
 	          
 	          <div className="recipe-links">
-	            <p><a className="btn-recipe" href="#"><i className="fa fa-tasks"></i> View the recipe</a></p>
-	            <p><a className="btn-recipe" href="#"><i className="fa fa-envelope-o"></i> Send to a friend</a></p>
+	            <p><i className="fa fa-tasks"></i> View the recipe</p>
+	            <p><i className="fa fa-envelope-o"></i> Send to a friend</p>
 	          </div>
 
 	        </div>

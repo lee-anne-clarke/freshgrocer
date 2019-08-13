@@ -3,7 +3,6 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import ScrollToTop from './js/ScrollToTop'
 import HeaderMobile from './js/HeaderMobile'
 import HeaderDt from './js/HeaderDt'
-import NavMobile from './js/NavMobile'
 import Homepage from './js/Homepage'
 import AboutUs from './js/AboutUs'
 import FindStores from './js/FindStores'
@@ -22,9 +21,8 @@ class App extends Component {
     return (
 			<Router>
 				<ScrollToTop>
-		      <div id="outer-container">
+		      <div>
 		        <HeaderMobile />
-		        <NavMobile />
 		        <HeaderDt />
 		        
 		        <Switch>

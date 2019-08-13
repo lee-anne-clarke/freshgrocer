@@ -19,14 +19,17 @@ class Footer extends Component {
 		  		</li>
 		  		
 		  		<li className="footer__nav-li">
+		  		{/* eslint-disable-next-line */}
 		  			<a className="btn-footer" href="#">Careers</a>
 		  		</li>
 
 		  		<li className="footer__nav-li">
+		  		{/* eslint-disable-next-line */}
 		  			<a className="btn-footer" href="#">Terms of Use</a>
 		  		</li>
 		  		
 		  		<li className="footer__nav-li">
+		  		{/* eslint-disable-next-line */}
 		  			<a className="btn-footer" href="#">Privacy Policy</a>
 		  		</li>
 		  	</ul>

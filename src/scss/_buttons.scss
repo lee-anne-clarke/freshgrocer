@@ -2,8 +2,11 @@
 	Buttons and Hyperlinks
 ---------------------------------------------------*/
 
-@import '../_variables';
+@import './variables';
 
+:focus {
+	outline: -webkit-focus-ring-color auto 0px;
+}
 
 .btn {
   text-transform: uppercase;
@@ -59,7 +62,7 @@
 
 	&:hover, 
 	&.active {
-		color: #ace9d0
+		color: black;
 	}
 }
 
