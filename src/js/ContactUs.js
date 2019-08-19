@@ -21,12 +21,14 @@ class ContactUs extends Component {
 
     //Contact form
     let contactForm = document.getElementById('contactForm');
+    let formFields = document.querySelectorAll(".form__input");
     let contactName = document.getElementById('contactName');
     let contactEmail = document.getElementById('contactEmail');
     let contactMsg = document.getElementById('contactMsg');
     let formValidMsg = document.getElementById('formValidMsg');
     let formInvalidMsg = document.getElementById('formInvalidMsg');
 
+    // Submit form
     contactForm.addEventListener('submit', (event) => {
       if (contactName.value && contactEmail.value && contactMsg.value) {
         contactForm.style.display = 'none';
@@ -37,6 +39,13 @@ class ContactUs extends Component {
         event.preventDefault();
       }
     });
+
+    // Hide invalid message on form field focus
+    for (let field of formFields) {
+      field.addEventListener('focus', () => {
+        formInvalidMsg.style.display = 'none';
+      }); 
+    }
   }
 
 
