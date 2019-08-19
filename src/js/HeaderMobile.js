@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
+import navItems from './navItems'
 import uuid from 'uuid'
 import { slide as Menu } from 'react-burger-menu'
 
@@ -13,40 +14,14 @@ class HeaderMobile extends Component {
     super(props);
     this.state = {
     	menuOpen: false,
-      navItems: [
-			{ 
-				id: uuid(), 
-				url: 'findstores',
-				btnText: 'Find A Store' 
-			},
-			{ 
-				id: uuid(), 
-				url: 'onsale',
-				btnText: 'On Sale' 
-			},
-			{ 
-				id: uuid(), 
-				url: 'recipes',
-				btnText: 'Recipes' 
-			},
-			{ 
-				id: uuid(), 
-				url: 'about',
-				btnText: 'About Us' 
-			},
-			{ 
-				id: uuid(), 
-				url: 'contact',
-				btnText: 'Contact Us' 
-			},
-     ],
+      navItems
     }
 
     this.closeMenu = this.closeMenu.bind(this)
   }
 
-   // This keeps your state in sync with the opening/closing of the menu
-  // via the default means, e.g. clicking the X, pressing the ESC key etc.
+	// This keeps state in sync with the opening/closing of the menu
+	// via the default means, e.g. clicking the X, pressing the ESC key etc.
   handleStateChange (state) {
     this.setState({menuOpen: state.isOpen})  
   }
@@ -73,11 +48,9 @@ class HeaderMobile extends Component {
 	        onStateChange={(state) => this.handleStateChange(state)}>
 					
 			    <ul className="nav-list nav-list--mb">
-		      	{navItems.map(({ id, url, btnText }) => (
-		      		<li className="nav-item-mb" key={id}>
-		      			<NavLink to={`/${url}`} onClick={this.closeMenu}>
-		      				{btnText}
-		      			</NavLink>
+		      	{navItems.map(({ url, btnText }) => (
+		      		<li className="nav-item-mb" key={uuid()}>
+		      			<NavLink to={`/${url}`} onClick={this.closeMenu}>{btnText}</NavLink>
 		      		</li>
 		      	))}
 			    </ul>

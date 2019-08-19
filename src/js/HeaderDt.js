@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import navItems from './navItems'
 import uuid from 'uuid'
 
 // images
@@ -10,35 +11,7 @@ class HeaderDt extends Component {
 	
   constructor(props) {
     super(props);
-    this.state = {
-      navItems: [
-			{ 
-				id: uuid(), 
-				url: 'findstores',
-				btnText: 'Find A Store' 
-			},
-			{ 
-				id: uuid(), 
-				url: 'onsale',
-				btnText: 'On Sale' 
-			},
-			{ 
-				id: uuid(), 
-				url: 'recipes',
-				btnText: 'Recipes' 
-			},
-			{ 
-				id: uuid(), 
-				url: 'about',
-				btnText: 'About Us' 
-			},
-			{ 
-				id: uuid(), 
-				url: 'contact',
-				btnText: 'Contact Us' 
-			},
-     ],
-    }
+    this.state = { navItems }
   }
 
 	render() {
@@ -53,8 +26,8 @@ class HeaderDt extends Component {
 	      </header>
 
 	      <ul className="nav-list nav-list--dt">
-	      	{navItems.map(({ id, url, btnText }) => (
-	      		<li className="nav-item-dt" key={id}>
+	      	{navItems.map(({ url, btnText }) => (
+	      		<li className="nav-item-dt" key={uuid()}>
 	      			<NavLink to={`/${url}`}>{btnText}</NavLink>
 	      		</li>
 	      	))}

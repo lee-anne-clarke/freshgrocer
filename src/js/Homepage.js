@@ -15,23 +15,23 @@ class Homepage extends Component {
   	document.title = "Welcome to The Fresh Grocer"
 
     //Scroll Reveal
-		const homeConfig1 = {
-		  origin: 'left',
-		  duration: 1000,
-		  delay: 350,
-		  distance: '500px',
-		  scale: 1,
-		  easing: 'ease',
-		}
+	const homeConfig1 = {
+	  origin: 'left',
+	  duration: 1000,
+	  delay: 350,
+	  distance: '500px',
+	  scale: 1,
+	  easing: 'ease',
+	}
 
-		const homeConfig = {
-		  origin: 'left',
-		  duration: 1000,
-		  delay: 100,
-		  distance: '500px',
-		  scale: 1,
-		  easing: 'ease',
-		}
+	const homeConfig = {
+	  origin: 'left',
+	  duration: 1000,
+	  delay: 100,
+	  distance: '500px',
+	  scale: 1,
+	  easing: 'ease',
+	}
 
     sr.reveal(this.box1, homeConfig1);
     sr.reveal(this.box2, homeConfig);

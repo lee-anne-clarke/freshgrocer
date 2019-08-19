@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import MainPage from './MainPage'
+import onSaleData from './onSaleData'
 import { 
 	mainHeaderImgConfig, 
 	innerpTitleConfig, 
@@ -14,55 +15,7 @@ import onsaleHeader from '../img/onsale/fruitsveggies2.jpg'
 class OnSale extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      onSaleItems: [
-			{ 
-				id: uuid(), 
-				imgSrc: require("../img/onsale/pumpkins1.jpg"),
-				imgAlt: 'pumpkins',
-			},
-			{ 
-				id: uuid(), 
-				imgSrc: require("../img/onsale/pastries1.jpg"),
-				imgAlt: 'pastries',
-			},
-			{ 
-				id: uuid(), 
-				imgSrc: require("../img/onsale/tomatoes1.jpg"),
-				imgAlt: 'tomatoes',
-			},
-			{ 
-				id: uuid(), 
-				imgSrc: require("../img/onsale/fruitsveggies1.jpg"),
-				imgAlt: 'fruitsveggies',
-			},
-			{ 
-				id: uuid(), 
-				imgSrc: require("../img/onsale/strawberries1.jpg"),
-				imgAlt: '',
-			},
-			{ 
-				id: uuid(), 
-				imgSrc: require("../img/onsale/pie2.jpg"),
-				imgAlt: 'strawberries',
-			},
-			{ 
-				id: uuid(), 
-				imgSrc: require("../img/onsale/apples.jpg"),
-				imgAlt: 'apples',
-			},
-			{ 
-				id: uuid(), 
-				imgSrc: require("../img/onsale/coffebeans.jpg"),
-				imgAlt: 'coffebeans',
-			},
-			{ 
-				id: uuid(), 
-				imgSrc: require("../img/onsale/cupcakes.jpg"),
-				imgAlt: 'cupcakes',
-			},
-     ],
-    }
+    this.state = { onSaleData }
   }
 
   componentDidMount = () => {
@@ -77,7 +30,7 @@ class OnSale extends Component {
 
 
   render() {
-  	const { onSaleItems } = this.state
+  	const { onSaleData } = this.state
 
     return (
 			<MainPage
@@ -89,14 +42,15 @@ class OnSale extends Component {
 
 	        <div className="onsale-items u-clearfix">
 
-		      	{onSaleItems.map(({ id, imgSrc, imgAlt }) => (
-						  <div className="onsale-item" key={id}>
+		      	{onSaleData.map(({ imgSrc, imgAlt }) => (
+						  <div className="onsale-item" key={uuid()}>
 						    <div className="onsale-item-inner">
 						      <img className="onsale-item-img" src={imgSrc} alt={imgAlt} />
 						      <div className="onsale-item-innertext">
 						        <h3>Vestibulum laoreet gravida pretium</h3>
 						        <p>Ut purus nulla, hendrerit eget blandit sit amet 
-						          <span className="onsale-deal"><i className="fa fa-tags"></i> 20% off</span></p>
+						          <span className="onsale-deal"><i className="fa fa-tags"></i> 20% off</span>
+										</p>
 						      </div>
 						    </div>
 						  </div>

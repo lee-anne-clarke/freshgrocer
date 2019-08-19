@@ -1,4 +1,3 @@
-//images
 import cookiesImg from '../img/recipes/cookies2.jpg'
 import cookingstuff1Img from '../img/recipes/cookingstuff1.jpg'
 import pieImg from '../img/recipes/pie2.jpg'
@@ -8,6 +7,7 @@ import platterImg from '../img/recipes/platter.jpg'
 import pastaImg from '../img/recipes/drypasta.jpg'
 import grillImg from '../img/recipes/grill.jpg'
 import cookingstuff2Img from '../img/recipes/cookingstuff2.jpg'
+
 
 const recipe1Bg = {
 	backgroundImage: `url(${cookiesImg})`

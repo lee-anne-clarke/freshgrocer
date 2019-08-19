@@ -66,7 +66,7 @@ class ContactUs extends Component {
 
           <form className="form" id="contactForm">
 		        <div className="form__group">
-		          <label htmlFor="reason" className="form__label">I have a question about: <span className="form__reqstar">*</span></label>
+		          <label htmlFor="reason" className="form__label">I have a question about: <span className="form__asterisk">*</span></label>
 		          <select id="selectbox" name="reason" className="form__input">
 		            <option>Mauris vel pretium ligula, ut semper tortor</option>
 		            <option>Aliquam a leo eu ante imperdiet </option>
@@ -78,12 +78,12 @@ class ContactUs extends Component {
 		        </div>
 
 		        <div className="form__group">
-		          <label className="form__label" htmlFor="name">Name: <span className="form__reqstar">*</span></label>
+		          <label className="form__label" htmlFor="name">Name: <span className="form__asterisk">*</span></label>
 		          <input className="form__input" type="text" name="name" id="contactName" />
 		        </div>
 
 		        <div className="form__group">
-		          <label className="form__label" htmlFor="mail">E-mail: <span className="form__reqstar">*</span></label>
+		          <label className="form__label" htmlFor="mail">E-mail: <span className="form__asterisk">*</span></label>
 		          <input className="form__input" type="email" name="email" id="contactEmail" />
 		        </div>
 
@@ -93,7 +93,7 @@ class ContactUs extends Component {
 		        </div>
 
 		        <div className="form__group">
-		          <label htmlFor="msg" className="form__label">Message: <span className="form__reqstar">*</span></label>
+		          <label htmlFor="msg" className="form__label">Message: <span className="form__asterisk">*</span></label>
 		          <textarea className="form__input" rows="6" name="message" id="contactMsg"></textarea>
 		        </div>
 

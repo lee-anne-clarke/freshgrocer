@@ -2,12 +2,12 @@
 	Forms
 ---------------------------------------------------*/
 
+.form {
+  padding-bottom: 2rem;
+}
+
 .form__group {
   margin-bottom: 2rem;
-  
-  select {
-  	max-width: 100%
-  }
   
   textarea {
   	resize: none;
@@ -20,6 +20,7 @@
 }
 
 .form__input {
+  width: 100%;
   padding: 0.5rem 0.8rem;
   border: 0.15rem solid #ccc;
   
@@ -29,7 +30,7 @@
   }
 }
  
-.form__reqstar {
+.form__asterisk {
   color: red;
 }
 

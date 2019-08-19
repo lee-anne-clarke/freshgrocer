@@ -37,7 +37,6 @@ class AboutUs extends Component {
           <p>In efficitur lectus sed sem rhoncus, vel porta dolor mollis. Nam sem velit, mollis sodales auctor vel, varius in ipsum. Maecenas egestas lectus id pellentesque porta. Mauris dignissim eget elit a commodo. Nunc leo diam, porta non turpis id, rhoncus imperdiet neque. Donec nec convallis tellus. Curabitur pretium molestie ex, at ultricies ipsum volutpat nec. In laoreet malesuada accumsan. Aliquam tincidunt orci volutpat ante euismod rutrum. Nullam facilisis molestie dui non eleifend.</p>
         </section>
 
-
         <Parallax bgImage={manholdingpeas} strength={300} />
 
         <section className="container">
