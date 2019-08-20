@@ -25,7 +25,7 @@ import {
 
 class Recipes extends Component {
 
-  componentDidMount = () => {
+  componentDidMount() {
   	document.title = "Recipes | The Fresh Grocer"
 
  		//Scroll Reveal

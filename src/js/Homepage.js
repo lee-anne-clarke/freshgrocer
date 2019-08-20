@@ -11,7 +11,7 @@ import cuttingboard from '../img/home/cuttingboard.jpg'
 
 class Homepage extends Component {
 
-  componentDidMount = () => {
+  componentDidMount() {
   	document.title = "Welcome to The Fresh Grocer"
 
     //Scroll Reveal

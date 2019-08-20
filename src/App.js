@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import ScrollToTop from './js/ScrollToTop'
-import HeaderMobile from './js/HeaderMobile'
-import HeaderDt from './js/HeaderDt'
+import Header from './js/Header'
 import Homepage from './js/Homepage'
 import AboutUs from './js/AboutUs'
 import FindStores from './js/FindStores'
@@ -22,8 +21,7 @@ class App extends Component {
 			<Router>
 				<ScrollToTop>
 		      <div>
-		        <HeaderMobile />
-		        <HeaderDt />
+		        <Header />
 		        
 		        <Switch>
 					    <Route exact path="/" component={Homepage} />

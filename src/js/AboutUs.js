@@ -16,7 +16,7 @@ import veggies from '../img/aboutus/veggies4.jpg'
 
 class AboutUs extends Component {
 
-  componentDidMount = () => {
+  componentDidMount() {
   	document.title = "About Our Company | The Fresh Grocer"
 
   	//Scroll Reveal

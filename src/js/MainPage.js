@@ -9,7 +9,7 @@ import sr from './sr/ScrollReveal'
 
 class MainPage extends Component {
 
-  componentDidMount = () => {
+  componentDidMount() {
   	//Scroll Reveal
     sr.reveal(this.mainHeaderImg, mainHeaderImgConfig);
     sr.reveal(this.innerpTitle, innerpTitleConfig);

@@ -13,12 +13,13 @@ import onsaleHeader from '../img/onsale/fruitsveggies2.jpg'
 
 
 class OnSale extends Component {
+	
   constructor(props) {
     super(props);
     this.state = { onSaleData }
   }
 
-  componentDidMount = () => {
+  componentDidMount() {
   	document.title = "Items On Sale | The Fresh Grocer"
 
   	//Scroll Reveal

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
-import navItems from './navItems'
+//import navItems from './navItems'
 import uuid from 'uuid'
 import { slide as Menu } from 'react-burger-menu'
 
@@ -13,8 +13,7 @@ class HeaderMobile extends Component {
 	constructor(props) {
     super(props);
     this.state = {
-    	menuOpen: false,
-      navItems
+    	menuOpen: false
     }
 
     this.closeMenu = this.closeMenu.bind(this)
@@ -22,17 +21,17 @@ class HeaderMobile extends Component {
 
 	// This keeps state in sync with the opening/closing of the menu
 	// via the default means, e.g. clicking the X, pressing the ESC key etc.
-  handleStateChange (state) {
+  handleStateChange(state) {
     this.setState({menuOpen: state.isOpen})  
   }
   
   // This can be used to close the menu, e.g. when a user clicks a menu item
-  closeMenu () {
+  closeMenu() {
     this.setState({menuOpen: false})
   }
 
 	render() {
-		const { navItems } = this.state
+		const navItems = this.props.navItems
 
 		return (
 			<div>

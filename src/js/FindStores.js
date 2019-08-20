@@ -14,7 +14,7 @@ import findStoresHeader from '../img/storefront.jpg'
 
 class FindStores extends Component {
 	
-  componentDidMount = () => {
+  componentDidMount() {
   	document.title = "Find A Store | The Fresh Grocer"
 
   	//Scroll Reveal

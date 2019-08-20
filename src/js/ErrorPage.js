@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 class ErrorPage extends Component {
-  componentDidMount = () => {
+  componentDidMount() {
   	document.title = "Page not found | The Fresh Grocer"
   }
 
