@@ -36,7 +36,7 @@ class OnSale extends Component {
     return (
 			<MainPage
 				title="On Sale" 
-				paraBgImg={onsaleHeader}>
+				headerImg={onsaleHeader}>
 
         <section className="container">
         	<h2 ref={(r) => { this.mainSubheader = r; }}>Check out this week's featured items on sale:</h2>

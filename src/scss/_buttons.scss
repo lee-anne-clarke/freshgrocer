@@ -26,9 +26,9 @@
 
 .btn-recipe {
 	color: black;
-	font-weight: bold;
 	text-decoration: none;
-	cursor: pointer;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom .2s;
 
 	&:hover {
 		border-bottom: 1px solid black;

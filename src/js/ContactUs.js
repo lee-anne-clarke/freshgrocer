@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import MainPage from './MainPage'
 import { 
 	mainHeaderImgConfig,
-	innerpTitleConfig 
-} from './sr/srConfig'
+	innerpTitleConfig } from './sr/srConfig'
 import sr from './sr/ScrollReveal'
 
 //images
@@ -53,7 +52,7 @@ class ContactUs extends Component {
     return (
 			<MainPage
 				title="Contact Us" 
-				paraBgImg={contactHeader}>
+				headerImg={contactHeader}>
 
         <div className="container">
         	<h2>Call</h2>

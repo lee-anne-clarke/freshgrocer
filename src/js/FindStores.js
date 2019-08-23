@@ -4,8 +4,7 @@ import FindStoresList from './FindStoresList'
 import { 
 	mainHeaderImgConfig, 
 	innerpTitleConfig, 
-	mainSubheaderConfig
-} from './sr/srConfig'
+	mainSubheaderConfig } from './sr/srConfig'
 import sr from './sr/ScrollReveal'
 
 //images
@@ -28,10 +27,12 @@ class FindStores extends Component {
     return (
 			<MainPage
 				title="Find A Store" 
-				paraBgImg={findStoresHeader}>
+				headerImg={findStoresHeader}>
 
 				<section className="container">
-					<h2 ref={(r) => { this.mainSubheader = r; }}>Come visit us at one of the following locations:</h2>
+					<h2 ref={(r) => { this.mainSubheader = r; }}>
+						Come visit us at one of the following locations:
+					</h2>
 
 					<FindStoresList />
 				</section>

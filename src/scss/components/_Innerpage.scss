@@ -5,10 +5,6 @@
 @import '../variables';
 
 
-.innerpage .react-parallax-content {
-  min-height: 19rem;
-}
-
 .innerpage__title {
   position: absolute;
   bottom: 28%;
@@ -23,4 +19,10 @@
 	@media (min-width: 768px) {
 		bottom: 0;
 	}
+}
+
+.innerpage__largeBgImg {
+  min-height: 19rem;
+  background-size: cover;
+  background-position: center;
 }

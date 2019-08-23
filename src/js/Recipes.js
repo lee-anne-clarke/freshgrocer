@@ -72,7 +72,7 @@ class Recipes extends Component {
     return (
 			<MainPage
 				title="Recipes" 
-				paraBgImg={recipesHeader}>
+				headerImg={recipesHeader}>
 
 				<section className="container">
 					<h2 className="u-text-left" ref={(r) => { this.mainSubheader = r; }}>Check out the latest recipes:</h2>

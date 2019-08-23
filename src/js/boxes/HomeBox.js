@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 function HomeBox(props) {
 	const style = {
-		backgroundImage: `url(${props.bgImage})`
+	   backgroundImage: `url(${props.bgImage})`
 	}
 
 	return (

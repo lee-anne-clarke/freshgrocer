@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-import { Parallax } from 'react-parallax'
 import { 
 	mainHeaderImgConfig, 
-	innerpTitleConfig, 
-} from './sr/srConfig'
+	innerpTitleConfig } from './sr/srConfig'
 import sr from './sr/ScrollReveal'
 
 
@@ -16,15 +14,20 @@ class MainPage extends Component {
   }
 
   render() {
+  	const style = {
+			backgroundImage: `url(${this.props.headerImg})`
+		}
+
     return (
     	<main className="innerpage" id="page-wrap">
 				<section className="u-relative"> 
-					<div className="innerpage__title" ref={(r) => { this.mainHeaderImg = r; }}>
+					<div className="innerpage__title" ref={(r) => { this.innerpTitle = r; }}>
 						<h1>{this.props.title}</h1>
 					</div>
 
-					<div ref={(r) => { this.innerpTitle = r; }}>
-						<Parallax bgImage={this.props.paraBgImg} strength={300} />
+					<div className="innerpage__largeBgImg" 
+							 ref={(r) => { this.mainHeaderImg = r; }}
+							 style={style}>
 					</div>
 				</section>
 

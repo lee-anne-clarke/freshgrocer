@@ -22,15 +22,10 @@
   }
 }
 
-.recipe-reveal {
+.recipe-border {
   @include linkEffects;
   background-size: 100% 200%;
   background-image: linear-gradient(to bottom, $fgBlue 50%, $fgGreen 50%);
-  transition: background-position 0.3s, color 0.3s;
-  
-  &:hover {
-  	background-position: 0 -100%;
-  }
 }
 
 .recipe-inner {
@@ -45,21 +40,6 @@
   h3 {
   	margin: 0;
   } 
-}
-
-.recipe-links {
-  opacity: 0;
-  @include transitionOpacity;
-}
-
-.recipe-reveal:hover {
-  .recipe-innertext {
-    background-color: rgba(226,243,243,0.93);
-  }
-  
-  .recipe-links {
-    opacity: 1;
-  }
 }
 
 .recipe-inner,
