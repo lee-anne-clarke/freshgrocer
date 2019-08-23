@@ -33,6 +33,13 @@
 	@media (max-width: 767px) {
 		overflow: hidden;
 	}
+
+	// Safari only
+	@media not all and (min-resolution:.001dpcm)
+	{ @supports (-webkit-appearance:none) {
+				overflow: hidden;
+				position: fixed;
+	}}
 }
 
 // Text for screen readers 
