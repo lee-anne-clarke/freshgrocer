@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import MainPage from './MainPage'
 import RecipeBox from './boxes/RecipeBox'
 import { 
@@ -23,7 +23,7 @@ import {
 } from './recipesBgImages'
 
 
-class Recipes extends Component {
+class Recipes extends PureComponent {
 
   componentDidMount() {
   	document.title = "Recipes | The Fresh Grocer"

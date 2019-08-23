@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 
 
-class FindStoresList extends Component {
+class FindStoresList extends PureComponent {
 	
 	componentDidMount() {
   	for (let i = 1; i < 9; i++) {

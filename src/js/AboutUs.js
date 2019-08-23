@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import MainPage from './MainPage'
 import { 
 	mainHeaderImgConfig,
@@ -13,7 +13,7 @@ import foodrack from '../img/aboutus/foodrack.jpg'
 import veggies from '../img/aboutus/veggies4.jpg'
 
 
-class AboutUs extends Component {
+class AboutUs extends PureComponent {
 
   componentDidMount() {
   	document.title = "About Our Company | The Fresh Grocer"

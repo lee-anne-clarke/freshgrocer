@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import MainPage from './MainPage'
 import { 
 	mainHeaderImgConfig,
@@ -9,7 +9,7 @@ import sr from './sr/ScrollReveal'
 import contactHeader from '../img/contactus/pie1.jpg'
 
 
-class ContactUs extends Component {
+class ContactUs extends PureComponent {
   
   componentDidMount() {
   	document.title = "Contact Us | The Fresh Grocer"

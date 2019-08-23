@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import MainPage from './MainPage'
 import FindStoresList from './FindStoresList'
 import { 
@@ -11,7 +11,7 @@ import sr from './sr/ScrollReveal'
 import findStoresHeader from '../img/storefront.jpg'
 
 
-class FindStores extends Component {
+class FindStores extends PureComponent {
 	
   componentDidMount() {
   	document.title = "Find A Store | The Fresh Grocer"

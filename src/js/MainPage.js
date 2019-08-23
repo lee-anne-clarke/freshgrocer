@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { 
 	mainHeaderImgConfig, 
 	innerpTitleConfig } from './sr/srConfig'
 import sr from './sr/ScrollReveal'
 
 
-class MainPage extends Component {
+class MainPage extends PureComponent {
 
   componentDidMount() {
   	//Scroll Reveal

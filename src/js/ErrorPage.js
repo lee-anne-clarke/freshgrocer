@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { Link } from 'react-router-dom'
 
 
-class ErrorPage extends Component {
+class ErrorPage extends PureComponent {
   componentDidMount() {
   	document.title = "Page not found | The Fresh Grocer"
   }
@@ -14,7 +14,7 @@ class ErrorPage extends Component {
         <section className="container">
           <h1>Page not found</h1>
 
-          <p><Link className="btn" to="/">Return to the hompepage</Link></p>
+          <p><Link className="btn" to="/">Return to hompepage</Link></p>
 
         </section>
       </main>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import MainPage from './MainPage'
 import onSaleData from './onSaleData'
 import { 
@@ -12,7 +12,7 @@ import uuid from 'uuid'
 import onsaleHeader from '../img/onsale/fruitsveggies2.jpg'
 
 
-class OnSale extends Component {
+class OnSale extends PureComponent {
 	
   constructor(props) {
     super(props);

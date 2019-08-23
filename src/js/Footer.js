@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import Scroll from 'react-scroll'
 
 //Necessary for React Scroll
 const scroll = Scroll.animateScroll;
 
 
-class Footer extends Component {
+class Footer extends PureComponent {
 	scrollToTop() {
 		scroll.scrollToTop();
 	}
