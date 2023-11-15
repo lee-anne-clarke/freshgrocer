@@ -1,0 +1,32 @@
+/*---------------------------------------------------
+	Typography
+---------------------------------------------------*/
+
+@import './variables';
+
+body {
+  font-family: var(--font-noto-sans), sans-serif;
+}
+
+h1,
+h2 {
+	font-family: var(--font-roboto-condensed), sans-serif;
+}
+
+h2 {	     
+    font-weight: 300
+}
+
+h3 {
+  font-weight: normal;
+}
+
+p, 
+.form {
+  line-height: 1.8;
+}
+
+hr {
+  border: none;
+  border-bottom: 0.2rem solid $fgBlue;
+}

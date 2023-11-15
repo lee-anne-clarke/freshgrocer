@@ -1,0 +1,51 @@
+/*---------------------------------------------------
+	Headers
+---------------------------------------------------*/
+
+// Desktop
+.header-dt {
+  background-color: $fgNav;
+  padding: 0.8rem 1.5rem 0.5rem;
+  border-bottom: 0.5rem solid $fgGreen;
+
+	@media (max-width: 767px) {
+		display: none;
+	}
+}
+
+// Mobile
+.header-mobile {
+	display: flex;
+	align-items: center;
+  background-color: $fgNav;
+  padding: 1rem 1.1rem;
+  border-bottom: 0.5rem solid $fgGreen;
+
+	@media (min-width: 768px) {
+		display: none;
+	}
+}
+
+// Header logo
+.header-logo {	
+	max-width: 100%;
+	height: auto;
+}
+
+.logo-wrap-dt {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.header-logo--dt {
+  width: 250px;
+}
+
+.logo-wrap-mobile {
+	padding-left: 2rem;
+}
+
+.header-logo--mb {
+	width: 208px;
+}
+
