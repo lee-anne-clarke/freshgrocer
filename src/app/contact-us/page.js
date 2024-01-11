@@ -73,7 +73,7 @@ export default function ContactUs() {
 
 
         {formSubmitted ? (
-             <div className="contact__validmsg" id="formValidMsg">
+             <div className="contact__validmsg">
                 <h3>
                   Thank you! We will get back to you as soon as we can.
                 </h3>
@@ -128,7 +128,7 @@ export default function ContactUs() {
 
                 {formInvalid ? (
                   <div>
-                    <p className="contact__invalidmsg" id="formInvalidMsg">
+                    <p className="contact__invalidmsg">
                     Please fill out all required fields.
                     </p>
                   </div>
