@@ -20,16 +20,16 @@ export default function Homepage() {
   useEffect(() => {
     setActiveBox1(true);
 
-    const scrollStuff = () => {
+    const scrollBoxEffects = () => {
       if (window.scrollY > 50) setActiveBox2(true);
       if (window.scrollY > 700) setActiveBox3(true);
       if (window.scrollY > 1300) setActiveBox4(true);
     }
 
-    window.addEventListener('scroll', scrollStuff)
+    window.addEventListener('scroll', scrollBoxEffects)
 
     return () => {
-      window.removeEventListener("scroll", scrollStuff);
+      window.removeEventListener("scroll", scrollBoxEffects);
     };
     
   });

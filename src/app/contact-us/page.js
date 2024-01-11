@@ -20,7 +20,7 @@ export default function ContactUs() {
   const [contactMsg, setContactMsg] = useState('');
 
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [showFormInvalidMsg, setShowFormInvalidMsg] = useState(false);
+  const [formInvalid, setformInvalid] = useState(false);
 
   // Hide invalid message on form field focus
   useEffect(() => {
@@ -28,7 +28,7 @@ export default function ContactUs() {
   
     for (let field of formFields) {
       field.addEventListener('focus', () => {
-        setShowFormInvalidMsg(false);
+        setformInvalid(false);
       }); 
     }
   }, [])
@@ -44,7 +44,7 @@ export default function ContactUs() {
     ) {
       setFormSubmitted(true);
     } else {
-      setShowFormInvalidMsg(true);
+      setformInvalid(true);
     }
   }
 
@@ -126,7 +126,7 @@ export default function ContactUs() {
                   <textarea className="form__input" rows="6" name="message" value={contactMsg} onChange={(e) => setContactMsg(e.target.value)}></textarea>
                 </div>
 
-                {showFormInvalidMsg ? (
+                {formInvalid ? (
                   <div>
                     <p className="contact__invalidmsg" id="formInvalidMsg">
                     Please fill out all required fields.
