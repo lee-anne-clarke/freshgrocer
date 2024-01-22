@@ -126,13 +126,13 @@ export default function ContactUs() {
                   <textarea className="form__input" rows="6" name="message" value={contactMsg} onChange={(e) => setContactMsg(e.target.value)}></textarea>
                 </div>
 
-                {formInvalid ? (
+                {formInvalid && (
                   <div>
                     <p className="contact__invalidmsg">
-                    Please fill out all required fields.
+                      Please fill out all required fields.
                     </p>
                   </div>
-                  ) : (``)
+                  ) 
                 }
 
                 <button className="btn btn--submit" type="submit">Submit</button>
